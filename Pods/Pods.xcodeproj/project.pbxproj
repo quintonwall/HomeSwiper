@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011AA315BEA0F5FA8473B173 /* NSString+SDSInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7BD35DC8AB5370B0B675FE /* NSString+SDSInput.h */; };
+		0153DEA8C7594BB14165C2E0 /* NSString+SDSBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E86545E689849EFAD757F4F /* NSString+SDSBackground.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		046276C17661408B77AC1A87 /* UIFont+SDSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C0985C8EC42FCFBE07621FA2 /* UIFont+SDSFont.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		054E2D7691AAF7D4EDB67C69 /* UIImage+SDSIconCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1ADAF106E12CC4AD4FF449 /* UIImage+SDSIconCustom.h */; };
+		078C93C7278515B266D18012 /* SDSIconUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 030EADB0E83AD08F8012D28D /* SDSIconUtility.h */; };
+		0E0B1EA4AF98F37C6EC1822C /* SDSIconStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F17D757D22CB2D800FB215 /* SDSIconStandard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E8D9D609A9E7DD610F6F2D3 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B2030667C8196FAF378411 /* MDCSwipeDirection.h */; };
+		12E1183039E5FB877C97EB56 /* UIImage+SDSIconStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E50BD4ABD9CC0B4AF924D66 /* UIImage+SDSIconStandard.h */; };
+		1603B79736373B7348406131 /* UIColor+SDSText.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C07BBFADC6B6CACC4B8A1D /* UIColor+SDSText.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		16D9F4785014049E8E4AEF09 /* NSString+SDSBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B850195D684D6D26BBE58C9 /* NSString+SDSBorder.h */; };
+		17DA2FEE7981EDFAC29A1937 /* SDSColorMsg.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB36D5497933E5CD94A342C /* SDSColorMsg.h */; };
+		1B410A17A1046B3CE2B9BFF4 /* SDSColorBg.h in Headers */ = {isa = PBXBuildFile; fileRef = C8D9F02467E2BF4A37CE8004 /* SDSColorBg.h */; };
+		1D52F7D5C1E692467C6C12B4 /* SDSIconCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A7E2C93A86169D51A37F22 /* SDSIconCustom.h */; };
+		1DDCDCF1D4900A3251C5EEBD /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0407F66AF3FFD733DE333FF /* MDCSwipeOptions.m */; };
+		1F06A5D0EE5B8C4BE865F442 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 38EF63ABB5CA441AF5C07F84 /* UIColor+MDCRGB8Bit.h */; };
+		207F9E803B2432BE38869771 /* UIColor+SDSBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3C7E78104794514DFEF917 /* UIColor+SDSBackground.h */; };
+		20984BEB2619D1EF75C12F45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A81069F27514AC7C3DBFC2 /* Foundation.framework */; };
+		22BE3AB8E9968B289C64ABC8 /* SDSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A671A9E073A8DC98DE0F1F /* SDSFont.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		238111137FBC7969CAE73DD3 /* SDSSizing.h in Headers */ = {isa = PBXBuildFile; fileRef = 3829ABED87F9EFC8D3B712B3 /* SDSSizing.h */; };
+		242C44F0D3F143E87C72C7EE /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7866140FC706717385F5E5 /* MDCSwipeToChoose.h */; };
+		25FF6DACED6D637561D2DD61 /* UIImage+SDSIconAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1332739319869193817D0D1A /* UIImage+SDSIconAction.h */; };
+		2A3BAC30D731A95D5CFFA801 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = AE730E85E3A5D2D0D52B409C /* MDCGeometry.h */; };
+		2BBE084ADEB0AC45608686C1 /* NSString+SDSIconUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 564D08A6A5C4B015B200AC09 /* NSString+SDSIconUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D354FE9C8E5C7DF108D79AB /* UIColor+SDSBorder.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEBF3E9C2DEB0ED478A52AC /* UIColor+SDSBorder.h */; };
+		2D6E97B127EF1C2294A6E701 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = E54072CD449881F1F287E525 /* UIColor+MDCRGB8Bit.m */; };
+		311B5AAB71E1C7DE1491A730 /* NSString+SDSMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = C4960CEDD2D2FB136077F25E /* NSString+SDSMessaging.h */; };
+		342F26D063DEFC978FB73559 /* SalesforceDesignSystemIconsUtility.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D82A9147BB1D2C9C2629FF14 /* SalesforceDesignSystemIconsUtility.ttf */; };
+		35DE05E2378902D724B8AB22 /* UIColor+SDSBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D24DACA0719D5948F2E1AD9A /* UIColor+SDSBorder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		38196E707F25CF1DC13AE46B /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A5B7C80EC5A70C42E8BD7 /* UIView+MDCBorderedLabel.m */; };
+		386404344ACF2AF61297FDA2 /* SDSColorTxt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B98CB060194C94E3EBBEF36 /* SDSColorTxt.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		396324CB54EDEA1410911060 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A2366AAFBA695CC0316B4B10 /* MDCSwipeResult.m */; };
+		3B1B9657E305F51AA843FFC1 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7330BAE57869B6D36BBA78 /* MDCGeometry.m */; };
+		3CBFA4882FC557721F7D0562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656576727C1AE9F4784BC97E /* UIKit.framework */; };
+		423BE4E3ADC0544A70F66717 /* Pods-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A22B35ACB7142CCA838E9273 /* Pods-MDCSwipeToChoose-dummy.m */; };
+		42493D4702A171A5944920E6 /* SDSColorAlias.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1E4459184B96499F8BFE7A /* SDSColorAlias.h */; };
+		4250BABF81E10C592CCE340E /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0265642EEAB9E311DFC759AE /* MDCSwipeToChooseView.h */; };
+		469F2119810F80175FDA1D13 /* UIColor+SDSMessaging.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B1A739325A4D7BB02F2492 /* UIColor+SDSMessaging.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47AB97658E32230E08F9E6E0 /* SDSColorAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FD494F2DB1AD3C18298740 /* SDSColorAlias.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4856D26D02D50BF2460B23E9 /* UIColor+SDSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5A254E52FE966AC7EAEFD0 /* UIColor+SDSButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4883EAC88E275EE314669778 /* NSString+SDSIconStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = F004A37B31D0B5153EFAE831 /* NSString+SDSIconStandard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		49CB687CABA5CB10986600CF /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAAE1A0B8D0C0A29C8125A8 /* MDCViewState.m */; };
+		4A8A2D7DB8F5867BFF1966C2 /* SalesforceSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9EA074BF91E1405D65FDDCA /* SalesforceSans-Light.ttf */; };
+		4C8948C560EE1A205DB2FC26 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93DD3F380308BB72EE8C80 /* Pods-dummy.m */; };
+		4DB47FDAC4680E33C8E29DA1 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E64675392B701E036F471B /* MDCSwipeToChooseView.m */; };
+		4E72FA1AB1A6EABD61D4A07D /* NSString+SDSIconAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D47CE2D88897591375D360 /* NSString+SDSIconAction.h */; };
+		4F45EE9EA52021310DADC2B8 /* SDSIconLabelUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = D2A571CEDC6F88961317B493 /* SDSIconLabelUtility.h */; };
+		502378C7DE43D89919510600 /* SDSIconLabelStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2987C8DB088FA36448A671 /* SDSIconLabelStandard.h */; };
+		52A7B1521C1E4840A063D949 /* SDSColorTxt.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB2472E3E7FBB390E5FB792 /* SDSColorTxt.h */; };
+		53F3A0A33A472CA5ACC2A4BB /* UIColor+SDSInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AD69211EB62BF6A81B7E50A4 /* UIColor+SDSInput.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5486667CC0E0F05AF6F83597 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6737511A1F2CA3E23BAF0966 /* MDCViewState.h */; };
+		5B67608A41A38DD50F2E98CC /* SDSColorBrdr.h in Headers */ = {isa = PBXBuildFile; fileRef = B335FA162F7F33F67BF5462C /* SDSColorBrdr.h */; };
+		5CBB2CDC7030A507FA43F50D /* UIFont+SDSFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F59DDEAF60CA7138210595F /* UIFont+SDSFont.h */; };
+		653B8DA6A4057D248CD1A77A /* SDSFontSz.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DC912F614F183D27E763 /* SDSFontSz.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		680018DBEC7003901B7D6B96 /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07233E267B2AA9AFA757887C /* MDCSwipeToChooseDelegate.h */; };
+		6DC23CAF536461C18FCA557D /* SDSIconLabelCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9E6B9D760A1C859B66ACD6 /* SDSIconLabelCustom.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		71533AB2B7188B278001EF12 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 1578F3A6F353C88210241729 /* UIView+MDCSwipeToChoose.h */; };
+		71976C975454336CA5020959 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC4E1860C3A7D4A22A32CB1 /* CoreText.framework */; };
+		7587DEAFB01E39F19CA7F648 /* UIImage+SDSIconUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = DB549BEAF7A8F9514B36CB69 /* UIImage+SDSIconUtility.h */; };
+		7A0D7F23EC081762627CDA21 /* UIColor+SDSBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DABC7EE353FEEBE4C9D87 /* UIColor+SDSBackground.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7AF8A2AC6B763AC1D23C4A14 /* NSString+SDSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F6282A474B029B84C1BA95DF /* NSString+SDSButton.h */; };
+		7C5BD0CD4B79B819E93460B2 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE664E066E9896C623DAD0 /* MDCPanState.m */; };
+		7E344A58519EE498972419EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A81069F27514AC7C3DBFC2 /* Foundation.framework */; };
+		7FCBC64905E72F91E6D2DF62 /* UIColor+SDSText.h in Headers */ = {isa = PBXBuildFile; fileRef = F638E17E20320018AB7ABA7A /* UIColor+SDSText.h */; };
+		815BA426985D2278040CC8B3 /* SDSColorMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = BB127D7823DAD80BBB9E5923 /* SDSColorMsg.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		81E73CA525172DE0BB592F14 /* SalesforceDesignSystemIconsAction.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A638D80199E4606CE7CEAB0 /* SalesforceDesignSystemIconsAction.ttf */; };
+		82102CDDBAB7791FC68EDAFD /* NSString+SDSIconCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FF0B87462349C8EF24D586 /* NSString+SDSIconCustom.h */; };
+		87079AF8F47FC12704C46FB0 /* SDSColorBg.m in Sources */ = {isa = PBXBuildFile; fileRef = F42425A39026803BF4B2CA64 /* SDSColorBg.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		89386B62B9D40A4BE4FB29CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A81069F27514AC7C3DBFC2 /* Foundation.framework */; };
+		8E27B8FF33C3DFD2BF94DB87 /* SDSColorInpt.m in Sources */ = {isa = PBXBuildFile; fileRef = E3916289C5BD015D6EFBD74A /* SDSColorInpt.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9341E895C660AFC917EECB14 /* SDSFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CAE5ADB17E09B1E00085CE /* SDSFont.h */; };
+		93D92EDF69F2B5B9C8241A25 /* SDSColorInpt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D38FB0B78F3FAC055DD6E8D /* SDSColorInpt.h */; };
+		940659F647A272DE00BD9E7E /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165FD81DCB5D1B47366056F /* MDCSwipeToChooseViewOptions.m */; };
+		97C859D46B0FB1B837CC0D82 /* SalesforceSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7513935FEC0152F2CF0C2B07 /* SalesforceSans-Regular.ttf */; };
+		97E8B26BB04190AF79734337 /* License-for-font.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD279C99074A9E01B5470460 /* License-for-font.txt */; };
+		9C74371BFA50F06B0B9012AD /* SDSIconCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FD73D3EA00ABB4B8750E5 /* SDSIconCustom.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9E1F5FF4B10DF2AA717FCE7A /* SalesforceDesignSystemIconsCustom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBAF8B440155EE25DAE22D0 /* SalesforceDesignSystemIconsCustom.ttf */; };
+		9FACFC1C7BC2404EA94A48C2 /* SDSColorBrdr.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E9954F1E894E41F9103C4 /* SDSColorBrdr.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A1EFAE47AE958822621550E6 /* SDSColorBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF57D268F774ECE213AA0BC /* SDSColorBtn.h */; };
+		A1F0624165996CA4E7167363 /* SDSIconLabelUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FACB3B19F0A794F9437C99 /* SDSIconLabelUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A46DA4AA8B878A69EE4B8277 /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA04244422A72D058C0C7AF0 /* MDCSwipeToChooseViewOptions.h */; };
+		A82E2F5D07A74EC7D9846419 /* SalesforceDesignSystemIconsStandard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2976F25FCB689880D6666D8 /* SalesforceDesignSystemIconsStandard.ttf */; };
+		A959C6E6986849A2F8DB70C1 /* SDSIconLabelAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C03ABA9FF1423E55571BA5F /* SDSIconLabelAction.h */; };
+		AB338BD95F8B4EE4780C42BA /* SDSIconAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 3626CCE615E14E0EAB865B78 /* SDSIconAction.h */; };
+		AB97D120032CBF30CA7D7633 /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B4A96AC44BFC367346F3B6 /* MDCSwipeResult.h */; };
+		B0D2AEBD6A615CFEF1AA5B1D /* UIImage+SDSIconStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8589A9CAECB8CD4D5023F6 /* UIImage+SDSIconStandard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1EA5A26D7F03069E7ABFF0E /* Pods-SalesforceDesignSystem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2132ACD7DCB33692B69FE02A /* Pods-SalesforceDesignSystem-dummy.m */; };
+		B2DB00C6E58971D946FFDC8D /* SalesforceDesignSystemExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 9987621D2DB7C1C16A5EA125 /* SalesforceDesignSystemExtended.h */; };
+		B444AC33CFB62CBEF27589FA /* SalesforceDesignSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 348A293720E27B20C849A422 /* SalesforceDesignSystem.h */; };
+		B6CB80F7943905540A47EF15 /* NSString+SDSIconUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E9C47B44948D417A340F9B /* NSString+SDSIconUtility.h */; };
+		B8D37E94066D571D9DA3A42F /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C8CD49698C7ED48F66EEFED9 /* UIView+MDCBorderedLabel.h */; };
+		BB923FF777A4D02B76A8D7E3 /* NSString+SDSInput.m in Sources */ = {isa = PBXBuildFile; fileRef = F09C553F8B58718849822DE0 /* NSString+SDSInput.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE9D1D34F8FB7A15B3CC8D39 /* NSString+SDSIconStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E490D3459CB05F1146F15F /* NSString+SDSIconStandard.h */; };
+		C1F8DC9B45B4DB7CEC9E6657 /* NSString+SDSIconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE287258DB89C37FDA7AE68 /* NSString+SDSIconAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3C81173D4A5223E038FEFB6 /* NSString+SDSBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A03723377ADEA253F18A569 /* NSString+SDSBackground.h */; };
+		C7378CFF0CCE2E870A2E59DD /* NSString+SDSText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7727A232A0074284E4208 /* NSString+SDSText.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C95A2F57734DB03F9F43D7EB /* UIColor+SDSInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BCF8F68A11F4778388EF80 /* UIColor+SDSInput.h */; };
+		C9D6051F59656084EAA51CA8 /* SDSIconUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3609B5895C0BE37DB58325CE /* SDSIconUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CA0588E32B0E219E84E44F9B /* UIColor+SDSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 371B5E9EC2920A15D2D4ADEF /* UIColor+SDSButton.h */; };
+		CD183DE2044B8AE378D00D06 /* SDSIconLabelStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A0E67F289AB086AFD6B36C /* SDSIconLabelStandard.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CD43821804BB3C18761B7BF7 /* SDSFontSz.h in Headers */ = {isa = PBXBuildFile; fileRef = 17894D59F19B574E0EF7FB9E /* SDSFontSz.h */; };
+		CFDBEC696E225FD9AB5BC079 /* UIImage+SDSIconCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 708CD118A62EE16603B71D54 /* UIImage+SDSIconCustom.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D041FE5214F04C2BC6E8B9B9 /* NSString+SDSMessaging.m in Sources */ = {isa = PBXBuildFile; fileRef = CB644883D63E372446C28E38 /* NSString+SDSMessaging.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA48B60F104E30E00D610E44 /* NSString+SDSIconCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6179063C3D60D77232919663 /* NSString+SDSIconCustom.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC99C27ADF023AE4409179BE /* SDSIconStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = CE615FC208C8BFD781F104DF /* SDSIconStandard.h */; };
+		E3EBD3B154C4EDED93A3E40A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656576727C1AE9F4784BC97E /* UIKit.framework */; };
+		EB240B2F3CBA84E7520AEBA8 /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EED32B2E4AAC487ABD592CB /* MDCSwipeOptions.h */; };
+		EB4FEE79CF800E93A7DD2D9D /* NSString+SDSBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 074910FBD106E08AD0D40D9F /* NSString+SDSBorder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EE982717CB1A18B5BE5209EF /* UIColor+SDSMessaging.h in Headers */ = {isa = PBXBuildFile; fileRef = 9178CBF6F006C722B69DB044 /* UIColor+SDSMessaging.h */; };
+		F11FC4FC1F43A24855F7BF39 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 861022C886738834B6B97EDA /* MDCPanState.h */; };
+		F1CD539F789ED3D227F8276E /* SDSIconLabelCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 16619EA8FEB96F66DFB3EB29 /* SDSIconLabelCustom.h */; };
+		F257F5BF955E1FFE6710DDFD /* SDSSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D51FB186C327C0DAB351421 /* SDSSpacing.h */; };
+		F43CF66AAE5E46A586E32B06 /* SalesforceSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4A508EA1BF4DFE1E3A375 /* SalesforceSans-Bold.ttf */; };
+		F44C74336083C9B4E30CF8DE /* UIImage+SDSIconUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE6EAD5D362E3FDC2A6F4F /* UIImage+SDSIconUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6994E09F4394D6C6C3244A3 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E59BD1FAE51546D3477584 /* UIView+MDCSwipeToChoose.m */; };
+		F8F27505AC2BF65265C15B8B /* NSString+SDSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C622FD28CD582B7A529BE /* NSString+SDSButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD3F49D75D011E280BCD3A89 /* UIImage+SDSIconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C40DDF6EBC93C2D7FF6430F5 /* UIImage+SDSIconAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD71DA5CD0B69ED658C1E096 /* SDSIconAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D0E6334605214ACD4D1FB4 /* SDSIconAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FDB09CA290E11D246162F2A2 /* SDSColorBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E02A217DFC6175FDD97DB7 /* SDSColorBtn.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FEFAC0032C8047D492BD4BAA /* NSString+SDSText.h in Headers */ = {isa = PBXBuildFile; fileRef = F5117C15CCEE75F4F6FCD4E9 /* NSString+SDSText.h */; };
+		FF20E1CEA432BCD2D9A03805 /* SDSIconLabelAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE36B2088F1963CC20C8756 /* SDSIconLabelAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15463AB515ED7FCBA8B7ED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039233AFD00C7A4719213D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4815D01B36C9D7FC2559E1C3;
+			remoteInfo = "Pods-SalesforceDesignSystem";
+		};
+		164393F4F32C9E550A27B827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039233AFD00C7A4719213D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15DDA1AC2964097107EBDA5;
+			remoteInfo = "Pods-SalesforceDesignSystem-SalesforceDesignSystem";
+		};
+		5A4F505169E3DB976AAC1730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039233AFD00C7A4719213D8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC289A4631747AFB87377B3F;
+			remoteInfo = "Pods-MDCSwipeToChoose";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0265642EEAB9E311DFC759AE /* MDCSwipeToChooseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseView.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.h; sourceTree = "<group>"; };
+		030EADB0E83AD08F8012D28D /* SDSIconUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconUtility.h; path = SalesforceDesignSystem/Generated/SDSIconUtility.h; sourceTree = "<group>"; };
+		03E02A217DFC6175FDD97DB7 /* SDSColorBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorBtn.m; path = SalesforceDesignSystem/Generated/SDSColorBtn.m; sourceTree = "<group>"; };
+		04C07BBFADC6B6CACC4B8A1D /* UIColor+SDSText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSText.m"; path = "SalesforceDesignSystem/UIColor+SDSText.m"; sourceTree = "<group>"; };
+		07233E267B2AA9AFA757887C /* MDCSwipeToChooseDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseDelegate.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseDelegate.h; sourceTree = "<group>"; };
+		074910FBD106E08AD0D40D9F /* NSString+SDSBorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSBorder.m"; path = "SalesforceDesignSystem/NSString+SDSBorder.m"; sourceTree = "<group>"; };
+		0A7866140FC706717385F5E5 /* MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChoose.h; path = MDCSwipeToChoose/Public/MDCSwipeToChoose.h; sourceTree = "<group>"; };
+		0B7BD35DC8AB5370B0B675FE /* NSString+SDSInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSInput.h"; path = "SalesforceDesignSystem/NSString+SDSInput.h"; sourceTree = "<group>"; };
+		0C9C97ECAF30606B0116ABA4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		0D2987C8DB088FA36448A671 /* SDSIconLabelStandard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconLabelStandard.h; path = SalesforceDesignSystem/Generated/SDSIconLabelStandard.h; sourceTree = "<group>"; };
+		0DCE664E066E9896C623DAD0 /* MDCPanState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPanState.m; path = MDCSwipeToChoose/Public/State/MDCPanState.m; sourceTree = "<group>"; };
+		1332739319869193817D0D1A /* UIImage+SDSIconAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SDSIconAction.h"; path = "SalesforceDesignSystem/UIImage+SDSIconAction.h"; sourceTree = "<group>"; };
+		1578F3A6F353C88210241729 /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCSwipeToChoose.h"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
+		16619EA8FEB96F66DFB3EB29 /* SDSIconLabelCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconLabelCustom.h; path = SalesforceDesignSystem/Generated/SDSIconLabelCustom.h; sourceTree = "<group>"; };
+		17894D59F19B574E0EF7FB9E /* SDSFontSz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSFontSz.h; path = SalesforceDesignSystem/Generated/SDSFontSz.h; sourceTree = "<group>"; };
+		183E9954F1E894E41F9103C4 /* SDSColorBrdr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorBrdr.m; path = SalesforceDesignSystem/Generated/SDSColorBrdr.m; sourceTree = "<group>"; };
+		1B850195D684D6D26BBE58C9 /* NSString+SDSBorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSBorder.h"; path = "SalesforceDesignSystem/NSString+SDSBorder.h"; sourceTree = "<group>"; };
+		1D1C8378E9F6EB48812FC905 /* libPods-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D38FB0B78F3FAC055DD6E8D /* SDSColorInpt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorInpt.h; path = SalesforceDesignSystem/Generated/SDSColorInpt.h; sourceTree = "<group>"; };
+		1E50BD4ABD9CC0B4AF924D66 /* UIImage+SDSIconStandard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SDSIconStandard.h"; path = "SalesforceDesignSystem/UIImage+SDSIconStandard.h"; sourceTree = "<group>"; };
+		1FA6A36F29AED5C8097C78FF /* Pods-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
+		20D0E6334605214ACD4D1FB4 /* SDSIconAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconAction.m; path = SalesforceDesignSystem/Generated/SDSIconAction.m; sourceTree = "<group>"; };
+		2132ACD7DCB33692B69FE02A /* Pods-SalesforceDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SalesforceDesignSystem-dummy.m"; sourceTree = "<group>"; };
+		22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesforceDesignSystem-Private.xcconfig"; sourceTree = "<group>"; };
+		2432F252E469E7BA3AA5B6E1 /* Pods-SalesforceDesignSystem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SalesforceDesignSystem.xcconfig"; sourceTree = "<group>"; };
+		2D51FB186C327C0DAB351421 /* SDSSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSSpacing.h; path = SalesforceDesignSystem/Generated/SDSSpacing.h; sourceTree = "<group>"; };
+		2DE287258DB89C37FDA7AE68 /* NSString+SDSIconAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSIconAction.m"; path = "SalesforceDesignSystem/NSString+SDSIconAction.m"; sourceTree = "<group>"; };
+		2EAAE1A0B8D0C0A29C8125A8 /* MDCViewState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCViewState.m; path = MDCSwipeToChoose/Internal/State/MDCViewState.m; sourceTree = "<group>"; };
+		2F59DDEAF60CA7138210595F /* UIFont+SDSFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+SDSFont.h"; path = "SalesforceDesignSystem/UIFont+SDSFont.h"; sourceTree = "<group>"; };
+		3165FD81DCB5D1B47366056F /* MDCSwipeToChooseViewOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseViewOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.m; sourceTree = "<group>"; };
+		348A293720E27B20C849A422 /* SalesforceDesignSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SalesforceDesignSystem.h; path = SalesforceDesignSystem/SalesforceDesignSystem.h; sourceTree = "<group>"; };
+		3609B5895C0BE37DB58325CE /* SDSIconUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconUtility.m; path = SalesforceDesignSystem/Generated/SDSIconUtility.m; sourceTree = "<group>"; };
+		3626CCE615E14E0EAB865B78 /* SDSIconAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconAction.h; path = SalesforceDesignSystem/Generated/SDSIconAction.h; sourceTree = "<group>"; };
+		371B5E9EC2920A15D2D4ADEF /* UIColor+SDSButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSButton.h"; path = "SalesforceDesignSystem/UIColor+SDSButton.h"; sourceTree = "<group>"; };
+		3829ABED87F9EFC8D3B712B3 /* SDSSizing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSSizing.h; path = SalesforceDesignSystem/Generated/SDSSizing.h; sourceTree = "<group>"; };
+		38EF63ABB5CA441AF5C07F84 /* UIColor+MDCRGB8Bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MDCRGB8Bit.h"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.h"; sourceTree = "<group>"; };
+		3C93DD3F380308BB72EE8C80 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		3D97294A6B3CD30ECA9B182F /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		3F9E6B9D760A1C859B66ACD6 /* SDSIconLabelCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconLabelCustom.m; path = SalesforceDesignSystem/Generated/SDSIconLabelCustom.m; sourceTree = "<group>"; };
+		42BE6EAD5D362E3FDC2A6F4F /* UIImage+SDSIconUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SDSIconUtility.m"; path = "SalesforceDesignSystem/UIImage+SDSIconUtility.m"; sourceTree = "<group>"; };
+		45FD494F2DB1AD3C18298740 /* SDSColorAlias.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorAlias.m; path = SalesforceDesignSystem/Generated/SDSColorAlias.m; sourceTree = "<group>"; };
+		47D47CE2D88897591375D360 /* NSString+SDSIconAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSIconAction.h"; path = "SalesforceDesignSystem/NSString+SDSIconAction.h"; sourceTree = "<group>"; };
+		4A3C7E78104794514DFEF917 /* UIColor+SDSBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSBackground.h"; path = "SalesforceDesignSystem/UIColor+SDSBackground.h"; sourceTree = "<group>"; };
+		4E8FD73D3EA00ABB4B8750E5 /* SDSIconCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconCustom.m; path = SalesforceDesignSystem/Generated/SDSIconCustom.m; sourceTree = "<group>"; };
+		55FACB3B19F0A794F9437C99 /* SDSIconLabelUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconLabelUtility.m; path = SalesforceDesignSystem/Generated/SDSIconLabelUtility.m; sourceTree = "<group>"; };
+		564D08A6A5C4B015B200AC09 /* NSString+SDSIconUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSIconUtility.m"; path = "SalesforceDesignSystem/NSString+SDSIconUtility.m"; sourceTree = "<group>"; };
+		58E9C47B44948D417A340F9B /* NSString+SDSIconUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSIconUtility.h"; path = "SalesforceDesignSystem/NSString+SDSIconUtility.h"; sourceTree = "<group>"; };
+		5EAEA210E33951B917E59819 /* SalesforceDesignSystem.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesforceDesignSystem.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		606DF90315FDC8FF0BDE62FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6179063C3D60D77232919663 /* NSString+SDSIconCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSIconCustom.m"; path = "SalesforceDesignSystem/NSString+SDSIconCustom.m"; sourceTree = "<group>"; };
+		656576727C1AE9F4784BC97E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		65CAE5ADB17E09B1E00085CE /* SDSFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSFont.h; path = SalesforceDesignSystem/Generated/SDSFont.h; sourceTree = "<group>"; };
+		66A671A9E073A8DC98DE0F1F /* SDSFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSFont.m; path = SalesforceDesignSystem/Generated/SDSFont.m; sourceTree = "<group>"; };
+		6737511A1F2CA3E23BAF0966 /* MDCViewState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCViewState.h; path = MDCSwipeToChoose/Internal/State/MDCViewState.h; sourceTree = "<group>"; };
+		6AB4A508EA1BF4DFE1E3A375 /* SalesforceSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SalesforceSans-Bold.ttf"; path = "SalesforceDesignSystem.bundle/SalesforceSans-Bold.ttf"; sourceTree = "<group>"; };
+		6DBAF8B440155EE25DAE22D0 /* SalesforceDesignSystemIconsCustom.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = SalesforceDesignSystemIconsCustom.ttf; path = SalesforceDesignSystem.bundle/SalesforceDesignSystemIconsCustom.ttf; sourceTree = "<group>"; };
+		6E86545E689849EFAD757F4F /* NSString+SDSBackground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSBackground.m"; path = "SalesforceDesignSystem/NSString+SDSBackground.m"; sourceTree = "<group>"; };
+		708CD118A62EE16603B71D54 /* UIImage+SDSIconCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SDSIconCustom.m"; path = "SalesforceDesignSystem/UIImage+SDSIconCustom.m"; sourceTree = "<group>"; };
+		7513935FEC0152F2CF0C2B07 /* SalesforceSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SalesforceSans-Regular.ttf"; path = "SalesforceDesignSystem.bundle/SalesforceSans-Regular.ttf"; sourceTree = "<group>"; };
+		776FD43534551E5B22AF7DE0 /* Pods-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
+		7AB7727A232A0074284E4208 /* NSString+SDSText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSText.m"; path = "SalesforceDesignSystem/NSString+SDSText.m"; sourceTree = "<group>"; };
+		7B20819426B1EFD1DF6B4800 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		7C03ABA9FF1423E55571BA5F /* SDSIconLabelAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconLabelAction.h; path = SalesforceDesignSystem/Generated/SDSIconLabelAction.h; sourceTree = "<group>"; };
+		7EE36B2088F1963CC20C8756 /* SDSIconLabelAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconLabelAction.m; path = SalesforceDesignSystem/Generated/SDSIconLabelAction.m; sourceTree = "<group>"; };
+		7EED32B2E4AAC487ABD592CB /* MDCSwipeOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.h; sourceTree = "<group>"; };
+		861022C886738834B6B97EDA /* MDCPanState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPanState.h; path = MDCSwipeToChoose/Public/State/MDCPanState.h; sourceTree = "<group>"; };
+		88B2030667C8196FAF378411 /* MDCSwipeDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeDirection.h; path = MDCSwipeToChoose/Public/State/MDCSwipeDirection.h; sourceTree = "<group>"; };
+		8B98CB060194C94E3EBBEF36 /* SDSColorTxt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorTxt.m; path = SalesforceDesignSystem/Generated/SDSColorTxt.m; sourceTree = "<group>"; };
+		8D6381429E82B5877993AF87 /* libPods-SalesforceDesignSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalesforceDesignSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB36D5497933E5CD94A342C /* SDSColorMsg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorMsg.h; path = SalesforceDesignSystem/Generated/SDSColorMsg.h; sourceTree = "<group>"; };
+		8F8589A9CAECB8CD4D5023F6 /* UIImage+SDSIconStandard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SDSIconStandard.m"; path = "SalesforceDesignSystem/UIImage+SDSIconStandard.m"; sourceTree = "<group>"; };
+		90A81069F27514AC7C3DBFC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		90BCF8F68A11F4778388EF80 /* UIColor+SDSInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSInput.h"; path = "SalesforceDesignSystem/UIColor+SDSInput.h"; sourceTree = "<group>"; };
+		9178CBF6F006C722B69DB044 /* UIColor+SDSMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSMessaging.h"; path = "SalesforceDesignSystem/UIColor+SDSMessaging.h"; sourceTree = "<group>"; };
+		9987621D2DB7C1C16A5EA125 /* SalesforceDesignSystemExtended.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SalesforceDesignSystemExtended.h; path = SalesforceDesignSystem/SalesforceDesignSystemExtended.h; sourceTree = "<group>"; };
+		9A03723377ADEA253F18A569 /* NSString+SDSBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSBackground.h"; path = "SalesforceDesignSystem/NSString+SDSBackground.h"; sourceTree = "<group>"; };
+		9A638D80199E4606CE7CEAB0 /* SalesforceDesignSystemIconsAction.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = SalesforceDesignSystemIconsAction.ttf; path = SalesforceDesignSystem.bundle/SalesforceDesignSystemIconsAction.ttf; sourceTree = "<group>"; };
+		9C1A5B7C80EC5A70C42E8BD7 /* UIView+MDCBorderedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCBorderedLabel.m"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.m"; sourceTree = "<group>"; };
+		9DF57D268F774ECE213AA0BC /* SDSColorBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorBtn.h; path = SalesforceDesignSystem/Generated/SDSColorBtn.h; sourceTree = "<group>"; };
+		9E1DABC7EE353FEEBE4C9D87 /* UIColor+SDSBackground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSBackground.m"; path = "SalesforceDesignSystem/UIColor+SDSBackground.m"; sourceTree = "<group>"; };
+		9F2976EBCB1989FF1ED683DA /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		A22B35ACB7142CCA838E9273 /* Pods-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
+		A2366AAFBA695CC0316B4B10 /* MDCSwipeResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeResult.m; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.m; sourceTree = "<group>"; };
+		A9A0E67F289AB086AFD6B36C /* SDSIconLabelStandard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconLabelStandard.m; path = SalesforceDesignSystem/Generated/SDSIconLabelStandard.m; sourceTree = "<group>"; };
+		A9A7E2C93A86169D51A37F22 /* SDSIconCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconCustom.h; path = SalesforceDesignSystem/Generated/SDSIconCustom.h; sourceTree = "<group>"; };
+		AB1E4459184B96499F8BFE7A /* SDSColorAlias.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorAlias.h; path = SalesforceDesignSystem/Generated/SDSColorAlias.h; sourceTree = "<group>"; };
+		ABB2472E3E7FBB390E5FB792 /* SDSColorTxt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorTxt.h; path = SalesforceDesignSystem/Generated/SDSColorTxt.h; sourceTree = "<group>"; };
+		AC7330BAE57869B6D36BBA78 /* MDCGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCGeometry.m; path = MDCSwipeToChoose/Internal/MDCGeometry.m; sourceTree = "<group>"; };
+		AD69211EB62BF6A81B7E50A4 /* UIColor+SDSInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSInput.m"; path = "SalesforceDesignSystem/UIColor+SDSInput.m"; sourceTree = "<group>"; };
+		AE730E85E3A5D2D0D52B409C /* MDCGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCGeometry.h; path = MDCSwipeToChoose/Internal/MDCGeometry.h; sourceTree = "<group>"; };
+		AEC2C7B83F3E783B130104CC /* Pods-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
+		AFFFCC9AB30D39404DB84DB7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B335FA162F7F33F67BF5462C /* SDSColorBrdr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorBrdr.h; path = SalesforceDesignSystem/Generated/SDSColorBrdr.h; sourceTree = "<group>"; };
+		B6E490D3459CB05F1146F15F /* NSString+SDSIconStandard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSIconStandard.h"; path = "SalesforceDesignSystem/NSString+SDSIconStandard.h"; sourceTree = "<group>"; };
+		BB127D7823DAD80BBB9E5923 /* SDSColorMsg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorMsg.m; path = SalesforceDesignSystem/Generated/SDSColorMsg.m; sourceTree = "<group>"; };
+		C0985C8EC42FCFBE07621FA2 /* UIFont+SDSFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+SDSFont.m"; path = "SalesforceDesignSystem/UIFont+SDSFont.m"; sourceTree = "<group>"; };
+		C2976F25FCB689880D6666D8 /* SalesforceDesignSystemIconsStandard.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = SalesforceDesignSystemIconsStandard.ttf; path = SalesforceDesignSystem.bundle/SalesforceDesignSystemIconsStandard.ttf; sourceTree = "<group>"; };
+		C40DDF6EBC93C2D7FF6430F5 /* UIImage+SDSIconAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SDSIconAction.m"; path = "SalesforceDesignSystem/UIImage+SDSIconAction.m"; sourceTree = "<group>"; };
+		C4960CEDD2D2FB136077F25E /* NSString+SDSMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSMessaging.h"; path = "SalesforceDesignSystem/NSString+SDSMessaging.h"; sourceTree = "<group>"; };
+		C8CD49698C7ED48F66EEFED9 /* UIView+MDCBorderedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCBorderedLabel.h"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.h"; sourceTree = "<group>"; };
+		C8D9F02467E2BF4A37CE8004 /* SDSColorBg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSColorBg.h; path = SalesforceDesignSystem/Generated/SDSColorBg.h; sourceTree = "<group>"; };
+		CA04244422A72D058C0C7AF0 /* MDCSwipeToChooseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseViewOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.h; sourceTree = "<group>"; };
+		CB644883D63E372446C28E38 /* NSString+SDSMessaging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSMessaging.m"; path = "SalesforceDesignSystem/NSString+SDSMessaging.m"; sourceTree = "<group>"; };
+		CE615FC208C8BFD781F104DF /* SDSIconStandard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconStandard.h; path = SalesforceDesignSystem/Generated/SDSIconStandard.h; sourceTree = "<group>"; };
+		CEA46CDA5A32618E60DAA735 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D24DACA0719D5948F2E1AD9A /* UIColor+SDSBorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSBorder.m"; path = "SalesforceDesignSystem/UIColor+SDSBorder.m"; sourceTree = "<group>"; };
+		D2A571CEDC6F88961317B493 /* SDSIconLabelUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDSIconLabelUtility.h; path = SalesforceDesignSystem/Generated/SDSIconLabelUtility.h; sourceTree = "<group>"; };
+		D2FF0B87462349C8EF24D586 /* NSString+SDSIconCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSIconCustom.h"; path = "SalesforceDesignSystem/NSString+SDSIconCustom.h"; sourceTree = "<group>"; };
+		D48292C35ADDDF053BD4D74F /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		D82A9147BB1D2C9C2629FF14 /* SalesforceDesignSystemIconsUtility.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = SalesforceDesignSystemIconsUtility.ttf; path = SalesforceDesignSystem.bundle/SalesforceDesignSystemIconsUtility.ttf; sourceTree = "<group>"; };
+		D8E59BD1FAE51546D3477584 /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCSwipeToChoose.m"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
+		D9EA074BF91E1405D65FDDCA /* SalesforceSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SalesforceSans-Light.ttf"; path = "SalesforceDesignSystem.bundle/SalesforceSans-Light.ttf"; sourceTree = "<group>"; };
+		DB549BEAF7A8F9514B36CB69 /* UIImage+SDSIconUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SDSIconUtility.h"; path = "SalesforceDesignSystem/UIImage+SDSIconUtility.h"; sourceTree = "<group>"; };
+		E1A9DC912F614F183D27E763 /* SDSFontSz.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSFontSz.m; path = SalesforceDesignSystem/Generated/SDSFontSz.m; sourceTree = "<group>"; };
+		E1F17D757D22CB2D800FB215 /* SDSIconStandard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSIconStandard.m; path = SalesforceDesignSystem/Generated/SDSIconStandard.m; sourceTree = "<group>"; };
+		E2B1A739325A4D7BB02F2492 /* UIColor+SDSMessaging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSMessaging.m"; path = "SalesforceDesignSystem/UIColor+SDSMessaging.m"; sourceTree = "<group>"; };
+		E3916289C5BD015D6EFBD74A /* SDSColorInpt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorInpt.m; path = SalesforceDesignSystem/Generated/SDSColorInpt.m; sourceTree = "<group>"; };
+		E518C9CB650F4E0B720583D6 /* Pods-SalesforceDesignSystem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SalesforceDesignSystem-prefix.pch"; sourceTree = "<group>"; };
+		E54072CD449881F1F287E525 /* UIColor+MDCRGB8Bit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MDCRGB8Bit.m"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.m"; sourceTree = "<group>"; };
+		EAEBF3E9C2DEB0ED478A52AC /* UIColor+SDSBorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSBorder.h"; path = "SalesforceDesignSystem/UIColor+SDSBorder.h"; sourceTree = "<group>"; };
+		EC5A254E52FE966AC7EAEFD0 /* UIColor+SDSButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDSButton.m"; path = "SalesforceDesignSystem/UIColor+SDSButton.m"; sourceTree = "<group>"; };
+		F004A37B31D0B5153EFAE831 /* NSString+SDSIconStandard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSIconStandard.m"; path = "SalesforceDesignSystem/NSString+SDSIconStandard.m"; sourceTree = "<group>"; };
+		F0407F66AF3FFD733DE333FF /* MDCSwipeOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.m; sourceTree = "<group>"; };
+		F09C553F8B58718849822DE0 /* NSString+SDSInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSInput.m"; path = "SalesforceDesignSystem/NSString+SDSInput.m"; sourceTree = "<group>"; };
+		F3B4A96AC44BFC367346F3B6 /* MDCSwipeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeResult.h; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.h; sourceTree = "<group>"; };
+		F3E64675392B701E036F471B /* MDCSwipeToChooseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseView.m; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.m; sourceTree = "<group>"; };
+		F42425A39026803BF4B2CA64 /* SDSColorBg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDSColorBg.m; path = SalesforceDesignSystem/Generated/SDSColorBg.m; sourceTree = "<group>"; };
+		F5117C15CCEE75F4F6FCD4E9 /* NSString+SDSText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSText.h"; path = "SalesforceDesignSystem/NSString+SDSText.h"; sourceTree = "<group>"; };
+		F6282A474B029B84C1BA95DF /* NSString+SDSButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SDSButton.h"; path = "SalesforceDesignSystem/NSString+SDSButton.h"; sourceTree = "<group>"; };
+		F638E17E20320018AB7ABA7A /* UIColor+SDSText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDSText.h"; path = "SalesforceDesignSystem/UIColor+SDSText.h"; sourceTree = "<group>"; };
+		FBC4E1860C3A7D4A22A32CB1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		FC1ADAF106E12CC4AD4FF449 /* UIImage+SDSIconCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SDSIconCustom.h"; path = "SalesforceDesignSystem/UIImage+SDSIconCustom.h"; sourceTree = "<group>"; };
+		FD279C99074A9E01B5470460 /* License-for-font.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "License-for-font.txt"; path = "SalesforceDesignSystem.bundle/License-for-font.txt"; sourceTree = "<group>"; };
+		FE5C622FD28CD582B7A529BE /* NSString+SDSButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SDSButton.m"; path = "SalesforceDesignSystem/NSString+SDSButton.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10F21CE783189BCBA95A1D8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89386B62B9D40A4BE4FB29CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26ED07E3172B99DEC64D9EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71976C975454336CA5020959 /* CoreText.framework in Frameworks */,
+				7E344A58519EE498972419EF /* Foundation.framework in Frameworks */,
+				3CBFA4882FC557721F7D0562 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEF6C3E465620C8A282E695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20984BEB2619D1EF75C12F45 /* Foundation.framework in Frameworks */,
+				E3EBD3B154C4EDED93A3E40A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE752E6351D06CE1DC336D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B13D33B2F1A8E99C0FEEF5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2432F252E469E7BA3AA5B6E1 /* Pods-SalesforceDesignSystem.xcconfig */,
+				22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */,
+				2132ACD7DCB33692B69FE02A /* Pods-SalesforceDesignSystem-dummy.m */,
+				E518C9CB650F4E0B720583D6 /* Pods-SalesforceDesignSystem-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SalesforceDesignSystem";
+			sourceTree = "<group>";
+		};
+		2122CC9F719A6EB0875593C2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6A36F29AED5C8097C78FF /* Pods-MDCSwipeToChoose.xcconfig */,
+				776FD43534551E5B22AF7DE0 /* Pods-MDCSwipeToChoose-Private.xcconfig */,
+				A22B35ACB7142CCA838E9273 /* Pods-MDCSwipeToChoose-dummy.m */,
+				AEC2C7B83F3E783B130104CC /* Pods-MDCSwipeToChoose-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MDCSwipeToChoose";
+			sourceTree = "<group>";
+		};
+		30433A04A50B16FBCC92642A /* MDCSwipeToChoose */ = {
+			isa = PBXGroup;
+			children = (
+				AE730E85E3A5D2D0D52B409C /* MDCGeometry.h */,
+				AC7330BAE57869B6D36BBA78 /* MDCGeometry.m */,
+				861022C886738834B6B97EDA /* MDCPanState.h */,
+				0DCE664E066E9896C623DAD0 /* MDCPanState.m */,
+				88B2030667C8196FAF378411 /* MDCSwipeDirection.h */,
+				7EED32B2E4AAC487ABD592CB /* MDCSwipeOptions.h */,
+				F0407F66AF3FFD733DE333FF /* MDCSwipeOptions.m */,
+				F3B4A96AC44BFC367346F3B6 /* MDCSwipeResult.h */,
+				A2366AAFBA695CC0316B4B10 /* MDCSwipeResult.m */,
+				0A7866140FC706717385F5E5 /* MDCSwipeToChoose.h */,
+				07233E267B2AA9AFA757887C /* MDCSwipeToChooseDelegate.h */,
+				0265642EEAB9E311DFC759AE /* MDCSwipeToChooseView.h */,
+				F3E64675392B701E036F471B /* MDCSwipeToChooseView.m */,
+				CA04244422A72D058C0C7AF0 /* MDCSwipeToChooseViewOptions.h */,
+				3165FD81DCB5D1B47366056F /* MDCSwipeToChooseViewOptions.m */,
+				6737511A1F2CA3E23BAF0966 /* MDCViewState.h */,
+				2EAAE1A0B8D0C0A29C8125A8 /* MDCViewState.m */,
+				38EF63ABB5CA441AF5C07F84 /* UIColor+MDCRGB8Bit.h */,
+				E54072CD449881F1F287E525 /* UIColor+MDCRGB8Bit.m */,
+				C8CD49698C7ED48F66EEFED9 /* UIView+MDCBorderedLabel.h */,
+				9C1A5B7C80EC5A70C42E8BD7 /* UIView+MDCBorderedLabel.m */,
+				1578F3A6F353C88210241729 /* UIView+MDCSwipeToChoose.h */,
+				D8E59BD1FAE51546D3477584 /* UIView+MDCSwipeToChoose.m */,
+				2122CC9F719A6EB0875593C2 /* Support Files */,
+			);
+			path = MDCSwipeToChoose;
+			sourceTree = "<group>";
+		};
+		306777E7969063F3EDF1C765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EAEA210E33951B917E59819 /* SalesforceDesignSystem.bundle */,
+				606DF90315FDC8FF0BDE62FB /* libPods.a */,
+				1D1C8378E9F6EB48812FC905 /* libPods-MDCSwipeToChoose.a */,
+				8D6381429E82B5877993AF87 /* libPods-SalesforceDesignSystem.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF0A091A99AF21E9D424868 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA46CDA5A32618E60DAA735 /* Pods-acknowledgements.markdown */,
+				D48292C35ADDDF053BD4D74F /* Pods-acknowledgements.plist */,
+				3C93DD3F380308BB72EE8C80 /* Pods-dummy.m */,
+				9F2976EBCB1989FF1ED683DA /* Pods-environment.h */,
+				3D97294A6B3CD30ECA9B182F /* Pods-resources.sh */,
+				7B20819426B1EFD1DF6B4800 /* Pods.debug.xcconfig */,
+				0C9C97ECAF30606B0116ABA4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		585EB58B1664BE655A557DC4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FBC4E1860C3A7D4A22A32CB1 /* CoreText.framework */,
+				90A81069F27514AC7C3DBFC2 /* Foundation.framework */,
+				656576727C1AE9F4784BC97E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		69E2454EA594C51AF18FF364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585EB58B1664BE655A557DC4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B81E76C5F44D37D28F4B74F3 /* SalesforceDesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				9A03723377ADEA253F18A569 /* NSString+SDSBackground.h */,
+				6E86545E689849EFAD757F4F /* NSString+SDSBackground.m */,
+				1B850195D684D6D26BBE58C9 /* NSString+SDSBorder.h */,
+				074910FBD106E08AD0D40D9F /* NSString+SDSBorder.m */,
+				F6282A474B029B84C1BA95DF /* NSString+SDSButton.h */,
+				FE5C622FD28CD582B7A529BE /* NSString+SDSButton.m */,
+				47D47CE2D88897591375D360 /* NSString+SDSIconAction.h */,
+				2DE287258DB89C37FDA7AE68 /* NSString+SDSIconAction.m */,
+				D2FF0B87462349C8EF24D586 /* NSString+SDSIconCustom.h */,
+				6179063C3D60D77232919663 /* NSString+SDSIconCustom.m */,
+				B6E490D3459CB05F1146F15F /* NSString+SDSIconStandard.h */,
+				F004A37B31D0B5153EFAE831 /* NSString+SDSIconStandard.m */,
+				58E9C47B44948D417A340F9B /* NSString+SDSIconUtility.h */,
+				564D08A6A5C4B015B200AC09 /* NSString+SDSIconUtility.m */,
+				0B7BD35DC8AB5370B0B675FE /* NSString+SDSInput.h */,
+				F09C553F8B58718849822DE0 /* NSString+SDSInput.m */,
+				C4960CEDD2D2FB136077F25E /* NSString+SDSMessaging.h */,
+				CB644883D63E372446C28E38 /* NSString+SDSMessaging.m */,
+				F5117C15CCEE75F4F6FCD4E9 /* NSString+SDSText.h */,
+				7AB7727A232A0074284E4208 /* NSString+SDSText.m */,
+				AB1E4459184B96499F8BFE7A /* SDSColorAlias.h */,
+				45FD494F2DB1AD3C18298740 /* SDSColorAlias.m */,
+				C8D9F02467E2BF4A37CE8004 /* SDSColorBg.h */,
+				F42425A39026803BF4B2CA64 /* SDSColorBg.m */,
+				B335FA162F7F33F67BF5462C /* SDSColorBrdr.h */,
+				183E9954F1E894E41F9103C4 /* SDSColorBrdr.m */,
+				9DF57D268F774ECE213AA0BC /* SDSColorBtn.h */,
+				03E02A217DFC6175FDD97DB7 /* SDSColorBtn.m */,
+				1D38FB0B78F3FAC055DD6E8D /* SDSColorInpt.h */,
+				E3916289C5BD015D6EFBD74A /* SDSColorInpt.m */,
+				8EB36D5497933E5CD94A342C /* SDSColorMsg.h */,
+				BB127D7823DAD80BBB9E5923 /* SDSColorMsg.m */,
+				ABB2472E3E7FBB390E5FB792 /* SDSColorTxt.h */,
+				8B98CB060194C94E3EBBEF36 /* SDSColorTxt.m */,
+				65CAE5ADB17E09B1E00085CE /* SDSFont.h */,
+				66A671A9E073A8DC98DE0F1F /* SDSFont.m */,
+				17894D59F19B574E0EF7FB9E /* SDSFontSz.h */,
+				E1A9DC912F614F183D27E763 /* SDSFontSz.m */,
+				3626CCE615E14E0EAB865B78 /* SDSIconAction.h */,
+				20D0E6334605214ACD4D1FB4 /* SDSIconAction.m */,
+				A9A7E2C93A86169D51A37F22 /* SDSIconCustom.h */,
+				4E8FD73D3EA00ABB4B8750E5 /* SDSIconCustom.m */,
+				7C03ABA9FF1423E55571BA5F /* SDSIconLabelAction.h */,
+				7EE36B2088F1963CC20C8756 /* SDSIconLabelAction.m */,
+				16619EA8FEB96F66DFB3EB29 /* SDSIconLabelCustom.h */,
+				3F9E6B9D760A1C859B66ACD6 /* SDSIconLabelCustom.m */,
+				0D2987C8DB088FA36448A671 /* SDSIconLabelStandard.h */,
+				A9A0E67F289AB086AFD6B36C /* SDSIconLabelStandard.m */,
+				D2A571CEDC6F88961317B493 /* SDSIconLabelUtility.h */,
+				55FACB3B19F0A794F9437C99 /* SDSIconLabelUtility.m */,
+				CE615FC208C8BFD781F104DF /* SDSIconStandard.h */,
+				E1F17D757D22CB2D800FB215 /* SDSIconStandard.m */,
+				030EADB0E83AD08F8012D28D /* SDSIconUtility.h */,
+				3609B5895C0BE37DB58325CE /* SDSIconUtility.m */,
+				3829ABED87F9EFC8D3B712B3 /* SDSSizing.h */,
+				2D51FB186C327C0DAB351421 /* SDSSpacing.h */,
+				348A293720E27B20C849A422 /* SalesforceDesignSystem.h */,
+				9987621D2DB7C1C16A5EA125 /* SalesforceDesignSystemExtended.h */,
+				4A3C7E78104794514DFEF917 /* UIColor+SDSBackground.h */,
+				9E1DABC7EE353FEEBE4C9D87 /* UIColor+SDSBackground.m */,
+				EAEBF3E9C2DEB0ED478A52AC /* UIColor+SDSBorder.h */,
+				D24DACA0719D5948F2E1AD9A /* UIColor+SDSBorder.m */,
+				371B5E9EC2920A15D2D4ADEF /* UIColor+SDSButton.h */,
+				EC5A254E52FE966AC7EAEFD0 /* UIColor+SDSButton.m */,
+				90BCF8F68A11F4778388EF80 /* UIColor+SDSInput.h */,
+				AD69211EB62BF6A81B7E50A4 /* UIColor+SDSInput.m */,
+				9178CBF6F006C722B69DB044 /* UIColor+SDSMessaging.h */,
+				E2B1A739325A4D7BB02F2492 /* UIColor+SDSMessaging.m */,
+				F638E17E20320018AB7ABA7A /* UIColor+SDSText.h */,
+				04C07BBFADC6B6CACC4B8A1D /* UIColor+SDSText.m */,
+				2F59DDEAF60CA7138210595F /* UIFont+SDSFont.h */,
+				C0985C8EC42FCFBE07621FA2 /* UIFont+SDSFont.m */,
+				1332739319869193817D0D1A /* UIImage+SDSIconAction.h */,
+				C40DDF6EBC93C2D7FF6430F5 /* UIImage+SDSIconAction.m */,
+				FC1ADAF106E12CC4AD4FF449 /* UIImage+SDSIconCustom.h */,
+				708CD118A62EE16603B71D54 /* UIImage+SDSIconCustom.m */,
+				1E50BD4ABD9CC0B4AF924D66 /* UIImage+SDSIconStandard.h */,
+				8F8589A9CAECB8CD4D5023F6 /* UIImage+SDSIconStandard.m */,
+				DB549BEAF7A8F9514B36CB69 /* UIImage+SDSIconUtility.h */,
+				42BE6EAD5D362E3FDC2A6F4F /* UIImage+SDSIconUtility.m */,
+				DD1AE9A034C75D552ADFA33C /* Resources */,
+				0B13D33B2F1A8E99C0FEEF5F /* Support Files */,
+			);
+			path = SalesforceDesignSystem;
+			sourceTree = "<group>";
+		};
+		BB8E6E3E0B1E4C24FC1D2281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30433A04A50B16FBCC92642A /* MDCSwipeToChoose */,
+				B81E76C5F44D37D28F4B74F3 /* SalesforceDesignSystem */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C394817F580BF665828CEACE = {
+			isa = PBXGroup;
+			children = (
+				AFFFCC9AB30D39404DB84DB7 /* Podfile */,
+				69E2454EA594C51AF18FF364 /* Frameworks */,
+				BB8E6E3E0B1E4C24FC1D2281 /* Pods */,
+				306777E7969063F3EDF1C765 /* Products */,
+				DD22C7B74A0D1BE7FE38FD18 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DD1AE9A034C75D552ADFA33C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD279C99074A9E01B5470460 /* License-for-font.txt */,
+				9A638D80199E4606CE7CEAB0 /* SalesforceDesignSystemIconsAction.ttf */,
+				6DBAF8B440155EE25DAE22D0 /* SalesforceDesignSystemIconsCustom.ttf */,
+				C2976F25FCB689880D6666D8 /* SalesforceDesignSystemIconsStandard.ttf */,
+				D82A9147BB1D2C9C2629FF14 /* SalesforceDesignSystemIconsUtility.ttf */,
+				6AB4A508EA1BF4DFE1E3A375 /* SalesforceSans-Bold.ttf */,
+				D9EA074BF91E1405D65FDDCA /* SalesforceSans-Light.ttf */,
+				7513935FEC0152F2CF0C2B07 /* SalesforceSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD22C7B74A0D1BE7FE38FD18 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0A091A99AF21E9D424868 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6173F256C959EA720EFF1D74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3BAC30D731A95D5CFFA801 /* MDCGeometry.h in Headers */,
+				F11FC4FC1F43A24855F7BF39 /* MDCPanState.h in Headers */,
+				0E8D9D609A9E7DD610F6F2D3 /* MDCSwipeDirection.h in Headers */,
+				EB240B2F3CBA84E7520AEBA8 /* MDCSwipeOptions.h in Headers */,
+				AB97D120032CBF30CA7D7633 /* MDCSwipeResult.h in Headers */,
+				242C44F0D3F143E87C72C7EE /* MDCSwipeToChoose.h in Headers */,
+				680018DBEC7003901B7D6B96 /* MDCSwipeToChooseDelegate.h in Headers */,
+				4250BABF81E10C592CCE340E /* MDCSwipeToChooseView.h in Headers */,
+				A46DA4AA8B878A69EE4B8277 /* MDCSwipeToChooseViewOptions.h in Headers */,
+				5486667CC0E0F05AF6F83597 /* MDCViewState.h in Headers */,
+				1F06A5D0EE5B8C4BE865F442 /* UIColor+MDCRGB8Bit.h in Headers */,
+				B8D37E94066D571D9DA3A42F /* UIView+MDCBorderedLabel.h in Headers */,
+				71533AB2B7188B278001EF12 /* UIView+MDCSwipeToChoose.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD94828FCE8BFF2ADD067CD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C81173D4A5223E038FEFB6 /* NSString+SDSBackground.h in Headers */,
+				16D9F4785014049E8E4AEF09 /* NSString+SDSBorder.h in Headers */,
+				7AF8A2AC6B763AC1D23C4A14 /* NSString+SDSButton.h in Headers */,
+				4E72FA1AB1A6EABD61D4A07D /* NSString+SDSIconAction.h in Headers */,
+				82102CDDBAB7791FC68EDAFD /* NSString+SDSIconCustom.h in Headers */,
+				BE9D1D34F8FB7A15B3CC8D39 /* NSString+SDSIconStandard.h in Headers */,
+				B6CB80F7943905540A47EF15 /* NSString+SDSIconUtility.h in Headers */,
+				011AA315BEA0F5FA8473B173 /* NSString+SDSInput.h in Headers */,
+				311B5AAB71E1C7DE1491A730 /* NSString+SDSMessaging.h in Headers */,
+				FEFAC0032C8047D492BD4BAA /* NSString+SDSText.h in Headers */,
+				42493D4702A171A5944920E6 /* SDSColorAlias.h in Headers */,
+				1B410A17A1046B3CE2B9BFF4 /* SDSColorBg.h in Headers */,
+				5B67608A41A38DD50F2E98CC /* SDSColorBrdr.h in Headers */,
+				A1EFAE47AE958822621550E6 /* SDSColorBtn.h in Headers */,
+				93D92EDF69F2B5B9C8241A25 /* SDSColorInpt.h in Headers */,
+				17DA2FEE7981EDFAC29A1937 /* SDSColorMsg.h in Headers */,
+				52A7B1521C1E4840A063D949 /* SDSColorTxt.h in Headers */,
+				9341E895C660AFC917EECB14 /* SDSFont.h in Headers */,
+				CD43821804BB3C18761B7BF7 /* SDSFontSz.h in Headers */,
+				AB338BD95F8B4EE4780C42BA /* SDSIconAction.h in Headers */,
+				1D52F7D5C1E692467C6C12B4 /* SDSIconCustom.h in Headers */,
+				A959C6E6986849A2F8DB70C1 /* SDSIconLabelAction.h in Headers */,
+				F1CD539F789ED3D227F8276E /* SDSIconLabelCustom.h in Headers */,
+				502378C7DE43D89919510600 /* SDSIconLabelStandard.h in Headers */,
+				4F45EE9EA52021310DADC2B8 /* SDSIconLabelUtility.h in Headers */,
+				DC99C27ADF023AE4409179BE /* SDSIconStandard.h in Headers */,
+				078C93C7278515B266D18012 /* SDSIconUtility.h in Headers */,
+				238111137FBC7969CAE73DD3 /* SDSSizing.h in Headers */,
+				F257F5BF955E1FFE6710DDFD /* SDSSpacing.h in Headers */,
+				B444AC33CFB62CBEF27589FA /* SalesforceDesignSystem.h in Headers */,
+				B2DB00C6E58971D946FFDC8D /* SalesforceDesignSystemExtended.h in Headers */,
+				207F9E803B2432BE38869771 /* UIColor+SDSBackground.h in Headers */,
+				2D354FE9C8E5C7DF108D79AB /* UIColor+SDSBorder.h in Headers */,
+				CA0588E32B0E219E84E44F9B /* UIColor+SDSButton.h in Headers */,
+				C95A2F57734DB03F9F43D7EB /* UIColor+SDSInput.h in Headers */,
+				EE982717CB1A18B5BE5209EF /* UIColor+SDSMessaging.h in Headers */,
+				7FCBC64905E72F91E6D2DF62 /* UIColor+SDSText.h in Headers */,
+				5CBB2CDC7030A507FA43F50D /* UIFont+SDSFont.h in Headers */,
+				25FF6DACED6D637561D2DD61 /* UIImage+SDSIconAction.h in Headers */,
+				054E2D7691AAF7D4EDB67C69 /* UIImage+SDSIconCustom.h in Headers */,
+				12E1183039E5FB877C97EB56 /* UIImage+SDSIconStandard.h in Headers */,
+				7587DEAFB01E39F19CA7F648 /* UIImage+SDSIconUtility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4815D01B36C9D7FC2559E1C3 /* Pods-SalesforceDesignSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCE82FD2E6F661A2AEE709F /* Build configuration list for PBXNativeTarget "Pods-SalesforceDesignSystem" */;
+			buildPhases = (
+				666D207F3EABB7BB3EC6255F /* Sources */,
+				26ED07E3172B99DEC64D9EBB /* Frameworks */,
+				AD94828FCE8BFF2ADD067CD1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B373E21AA7224CAF9AE0ECE /* PBXTargetDependency */,
+			);
+			name = "Pods-SalesforceDesignSystem";
+			productName = "Pods-SalesforceDesignSystem";
+			productReference = 8D6381429E82B5877993AF87 /* libPods-SalesforceDesignSystem.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6456A88A6D2D159532D8C5B6 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21601A91C80B2FF936B54359 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0BB502F527EDFD0585250AE4 /* Sources */,
+				10F21CE783189BCBA95A1D8D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE80B812575CC2077F2AE32 /* PBXTargetDependency */,
+				FCE70697792A7244EF26B42F /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 606DF90315FDC8FF0BDE62FB /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC289A4631747AFB87377B3F /* Pods-MDCSwipeToChoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C846205D2106B17ADDA6860 /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */;
+			buildPhases = (
+				87147365B34CAE7D4C1B6823 /* Sources */,
+				3CEF6C3E465620C8A282E695 /* Frameworks */,
+				6173F256C959EA720EFF1D74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MDCSwipeToChoose";
+			productName = "Pods-MDCSwipeToChoose";
+			productReference = 1D1C8378E9F6EB48812FC905 /* libPods-MDCSwipeToChoose.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D15DDA1AC2964097107EBDA5 /* Pods-SalesforceDesignSystem-SalesforceDesignSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30578D1C31B2DE198942E500 /* Build configuration list for PBXNativeTarget "Pods-SalesforceDesignSystem-SalesforceDesignSystem" */;
+			buildPhases = (
+				922BF9B2CD07F2538A93F0BC /* Sources */,
+				FE752E6351D06CE1DC336D51 /* Frameworks */,
+				603E2F22310E80BA954F1D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SalesforceDesignSystem-SalesforceDesignSystem";
+			productName = "Pods-SalesforceDesignSystem-SalesforceDesignSystem";
+			productReference = 5EAEA210E33951B917E59819 /* SalesforceDesignSystem.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039233AFD00C7A4719213D8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 359A58188D883F7DC0AE0ADB /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C394817F580BF665828CEACE;
+			productRefGroup = 306777E7969063F3EDF1C765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6456A88A6D2D159532D8C5B6 /* Pods */,
+				CC289A4631747AFB87377B3F /* Pods-MDCSwipeToChoose */,
+				4815D01B36C9D7FC2559E1C3 /* Pods-SalesforceDesignSystem */,
+				D15DDA1AC2964097107EBDA5 /* Pods-SalesforceDesignSystem-SalesforceDesignSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		603E2F22310E80BA954F1D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E8B26BB04190AF79734337 /* License-for-font.txt in Resources */,
+				81E73CA525172DE0BB592F14 /* SalesforceDesignSystemIconsAction.ttf in Resources */,
+				9E1F5FF4B10DF2AA717FCE7A /* SalesforceDesignSystemIconsCustom.ttf in Resources */,
+				A82E2F5D07A74EC7D9846419 /* SalesforceDesignSystemIconsStandard.ttf in Resources */,
+				342F26D063DEFC978FB73559 /* SalesforceDesignSystemIconsUtility.ttf in Resources */,
+				F43CF66AAE5E46A586E32B06 /* SalesforceSans-Bold.ttf in Resources */,
+				4A8A2D7DB8F5867BFF1966C2 /* SalesforceSans-Light.ttf in Resources */,
+				97C859D46B0FB1B837CC0D82 /* SalesforceSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BB502F527EDFD0585250AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8948C560EE1A205DB2FC26 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666D207F3EABB7BB3EC6255F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0153DEA8C7594BB14165C2E0 /* NSString+SDSBackground.m in Sources */,
+				EB4FEE79CF800E93A7DD2D9D /* NSString+SDSBorder.m in Sources */,
+				F8F27505AC2BF65265C15B8B /* NSString+SDSButton.m in Sources */,
+				C1F8DC9B45B4DB7CEC9E6657 /* NSString+SDSIconAction.m in Sources */,
+				DA48B60F104E30E00D610E44 /* NSString+SDSIconCustom.m in Sources */,
+				4883EAC88E275EE314669778 /* NSString+SDSIconStandard.m in Sources */,
+				2BBE084ADEB0AC45608686C1 /* NSString+SDSIconUtility.m in Sources */,
+				BB923FF777A4D02B76A8D7E3 /* NSString+SDSInput.m in Sources */,
+				D041FE5214F04C2BC6E8B9B9 /* NSString+SDSMessaging.m in Sources */,
+				C7378CFF0CCE2E870A2E59DD /* NSString+SDSText.m in Sources */,
+				B1EA5A26D7F03069E7ABFF0E /* Pods-SalesforceDesignSystem-dummy.m in Sources */,
+				47AB97658E32230E08F9E6E0 /* SDSColorAlias.m in Sources */,
+				87079AF8F47FC12704C46FB0 /* SDSColorBg.m in Sources */,
+				9FACFC1C7BC2404EA94A48C2 /* SDSColorBrdr.m in Sources */,
+				FDB09CA290E11D246162F2A2 /* SDSColorBtn.m in Sources */,
+				8E27B8FF33C3DFD2BF94DB87 /* SDSColorInpt.m in Sources */,
+				815BA426985D2278040CC8B3 /* SDSColorMsg.m in Sources */,
+				386404344ACF2AF61297FDA2 /* SDSColorTxt.m in Sources */,
+				22BE3AB8E9968B289C64ABC8 /* SDSFont.m in Sources */,
+				653B8DA6A4057D248CD1A77A /* SDSFontSz.m in Sources */,
+				FD71DA5CD0B69ED658C1E096 /* SDSIconAction.m in Sources */,
+				9C74371BFA50F06B0B9012AD /* SDSIconCustom.m in Sources */,
+				FF20E1CEA432BCD2D9A03805 /* SDSIconLabelAction.m in Sources */,
+				6DC23CAF536461C18FCA557D /* SDSIconLabelCustom.m in Sources */,
+				CD183DE2044B8AE378D00D06 /* SDSIconLabelStandard.m in Sources */,
+				A1F0624165996CA4E7167363 /* SDSIconLabelUtility.m in Sources */,
+				0E0B1EA4AF98F37C6EC1822C /* SDSIconStandard.m in Sources */,
+				C9D6051F59656084EAA51CA8 /* SDSIconUtility.m in Sources */,
+				7A0D7F23EC081762627CDA21 /* UIColor+SDSBackground.m in Sources */,
+				35DE05E2378902D724B8AB22 /* UIColor+SDSBorder.m in Sources */,
+				4856D26D02D50BF2460B23E9 /* UIColor+SDSButton.m in Sources */,
+				53F3A0A33A472CA5ACC2A4BB /* UIColor+SDSInput.m in Sources */,
+				469F2119810F80175FDA1D13 /* UIColor+SDSMessaging.m in Sources */,
+				1603B79736373B7348406131 /* UIColor+SDSText.m in Sources */,
+				046276C17661408B77AC1A87 /* UIFont+SDSFont.m in Sources */,
+				FD3F49D75D011E280BCD3A89 /* UIImage+SDSIconAction.m in Sources */,
+				CFDBEC696E225FD9AB5BC079 /* UIImage+SDSIconCustom.m in Sources */,
+				B0D2AEBD6A615CFEF1AA5B1D /* UIImage+SDSIconStandard.m in Sources */,
+				F44C74336083C9B4E30CF8DE /* UIImage+SDSIconUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87147365B34CAE7D4C1B6823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1B9657E305F51AA843FFC1 /* MDCGeometry.m in Sources */,
+				7C5BD0CD4B79B819E93460B2 /* MDCPanState.m in Sources */,
+				1DDCDCF1D4900A3251C5EEBD /* MDCSwipeOptions.m in Sources */,
+				396324CB54EDEA1410911060 /* MDCSwipeResult.m in Sources */,
+				4DB47FDAC4680E33C8E29DA1 /* MDCSwipeToChooseView.m in Sources */,
+				940659F647A272DE00BD9E7E /* MDCSwipeToChooseViewOptions.m in Sources */,
+				49CB687CABA5CB10986600CF /* MDCViewState.m in Sources */,
+				423BE4E3ADC0544A70F66717 /* Pods-MDCSwipeToChoose-dummy.m in Sources */,
+				2D6E97B127EF1C2294A6E701 /* UIColor+MDCRGB8Bit.m in Sources */,
+				38196E707F25CF1DC13AE46B /* UIView+MDCBorderedLabel.m in Sources */,
+				F6994E09F4394D6C6C3244A3 /* UIView+MDCSwipeToChoose.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		922BF9B2CD07F2538A93F0BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B373E21AA7224CAF9AE0ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SalesforceDesignSystem-SalesforceDesignSystem";
+			target = D15DDA1AC2964097107EBDA5 /* Pods-SalesforceDesignSystem-SalesforceDesignSystem */;
+			targetProxy = 164393F4F32C9E550A27B827 /* PBXContainerItemProxy */;
+		};
+		CDE80B812575CC2077F2AE32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MDCSwipeToChoose";
+			target = CC289A4631747AFB87377B3F /* Pods-MDCSwipeToChoose */;
+			targetProxy = 5A4F505169E3DB976AAC1730 /* PBXContainerItemProxy */;
+		};
+		FCE70697792A7244EF26B42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SalesforceDesignSystem";
+			target = 4815D01B36C9D7FC2559E1C3 /* Pods-SalesforceDesignSystem */;
+			targetProxy = 15463AB515ED7FCBA8B7ED4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		108AA9C90BC68BB5968FF5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776FD43534551E5B22AF7DE0 /* Pods-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1095F0F9B0B7B99080F9CBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SalesforceDesignSystem;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		26FA5AD2FCCC2567F538CBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776FD43534551E5B22AF7DE0 /* Pods-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		36DFEF350D5DCC56B4FA895B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9C97ECAF30606B0116ABA4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4E20662D364D996BE0D55FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		539EECD39EB092E2F204E993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		954D40426ACE3B3FF0E6635D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SalesforceDesignSystem;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A3B58A5511CE6A29C18C1779 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SalesforceDesignSystem/Pods-SalesforceDesignSystem-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BCE3989506807FCA4540BE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B20819426B1EFD1DF6B4800 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E819A3C311D1459D5FBBAABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DB09DD02B12A4376211ED4 /* Pods-SalesforceDesignSystem-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SalesforceDesignSystem/Pods-SalesforceDesignSystem-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C846205D2106B17ADDA6860 /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108AA9C90BC68BB5968FF5C9 /* Debug */,
+				26FA5AD2FCCC2567F538CBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21601A91C80B2FF936B54359 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE3989506807FCA4540BE1B /* Debug */,
+				36DFEF350D5DCC56B4FA895B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30578D1C31B2DE198942E500 /* Build configuration list for PBXNativeTarget "Pods-SalesforceDesignSystem-SalesforceDesignSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1095F0F9B0B7B99080F9CBA3 /* Debug */,
+				954D40426ACE3B3FF0E6635D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359A58188D883F7DC0AE0ADB /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E20662D364D996BE0D55FC9 /* Debug */,
+				539EECD39EB092E2F204E993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCE82FD2E6F661A2AEE709F /* Build configuration list for PBXNativeTarget "Pods-SalesforceDesignSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B58A5511CE6A29C18C1779 /* Debug */,
+				E819A3C311D1459D5FBBAABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039233AFD00C7A4719213D8C /* Project object */;
+}

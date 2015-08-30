@@ -1,0 +1,1 @@
+../../../SalesforceDesignSystem/SalesforceDesignSystem/Generated/SDSColorAlias.h
