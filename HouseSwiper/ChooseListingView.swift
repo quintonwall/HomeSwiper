@@ -21,10 +21,14 @@ class ChooseListingView: MDCSwipeToChooseView {
            
             self.imageView.image = image
             var defaults = NSUserDefaults.standardUserDefaults()
-            var scaleImages:Bool = false
-            scaleImages = defaults.valueForKey("scaleListingImages") as! Bool
-            if (scaleImages) {
-                self.imageView.contentMode = .ScaleAspectFit
+            
+            
+            if (defaults.objectForKey("scaleListingImages") != nil) {
+                var scaleImages = defaults.valueForKey("scaleListingImages") as! Bool
+                
+                if(scaleImages) {
+                    self.imageView.contentMode = .ScaleAspectFit
+                }
             }
             self.imageView.backgroundColor = UIColor.whiteColor()
      

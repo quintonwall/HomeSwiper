@@ -117,14 +117,18 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     func fetchListings(){
         
         var defaults = NSUserDefaults.standardUserDefaults()
-        var listingUrl:String = defaults.valueForKey("listingsServiceURL") as! String
         
-        if (listingUrl.isEmpty) {
+       
+       
+        
+        if (defaults.objectForKey("listingsServiceURL") == nil) {
             var alert = UIAlertController(title: "Oh Snap!", message: "Looks like you have no listings service URL set. Please go to settings and add one.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
             
         } else {
+            
+             var listingUrl:String = defaults.valueForKey("listingsServiceURL") as! String
         
         request(.GET, listingUrl, parameters: nil)
             .responseJSON { _, _, JSONstr, _ in
