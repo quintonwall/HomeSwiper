@@ -18,13 +18,23 @@ class ChooseListingView: MDCSwipeToChooseView {
         self.listing = listing
         
         if let image = self.listing.Image {
+           
             self.imageView.image = image
+            var defaults = NSUserDefaults.standardUserDefaults()
+            var scaleImages:Bool = false
+            scaleImages = defaults.valueForKey("scaleListingImages") as! Bool
+            if (scaleImages) {
+                self.imageView.contentMode = .ScaleAspectFit
+            }
+            self.imageView.backgroundColor = UIColor.whiteColor()
+     
         }
         
         self.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
         UIViewAutoresizing.FlexibleBottomMargin
         
-        self.imageView.autoresizingMask = self.autoresizingMask
+       self.imageView.autoresizingMask = self.autoresizingMask
+        
         constructInformationView()
     }
     

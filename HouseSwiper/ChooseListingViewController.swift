@@ -11,22 +11,20 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     var frontCardView:ChooseListingView!
     var backCardView:ChooseListingView!
     var bgColor:String = "B8BDB9"
-    let listingsServiceURL = "https://pacific-reef-6131.herokuapp.com/properties"
+    
+    @IBOutlet weak var reloadButton: UIButton!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        fetchListings()
-        
-   
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        fetchListings()
     }
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        
         
        // self.view.backgroundColor = self.hexStringToUIColor(bgColor)
          self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bgblur-sm")!)
@@ -34,9 +32,22 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+       
+        reloadButton.setBackgroundImage( UIImage.sdsIconAction(SDSIconActionType.ResetPassword, withSize: 60)!, forState: UIControlState.Normal)
+        
+         fetchListings()
+    }
+    
+    @IBAction func reloadCards(sender: AnyObject) {
+        fetchListings()
+    }
+    
     func setUpCards() {
         self.setTheFrontCardView(self.popListingViewWithFrame(frontCardViewFrame())!)
         self.view.addSubview(self.frontCardView)
+        
         
         self.backCardView = self.popListingViewWithFrame(backCardViewFrame())!
         self.view.insertSubview(self.backCardView, belowSubview: self.frontCardView)
@@ -100,9 +111,22 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     }
     
     
+    
+    // service url should look something like this: https://pacific-reef-6131.herokuapp.com/properties
+    //and based on this app: https://github.com/ccoenraets/lightning-react-app
     func fetchListings(){
-  
-        request(.GET, listingsServiceURL, parameters: nil)
+        
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var listingUrl:String = defaults.valueForKey("listingsServiceURL") as! String
+        
+        if (listingUrl.isEmpty) {
+            var alert = UIAlertController(title: "Oh Snap!", message: "Looks like you have no listings service URL set. Please go to settings and add one.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        } else {
+        
+        request(.GET, listingUrl, parameters: nil)
             .responseJSON { _, _, JSONstr, _ in
                 //println(JSONstr)
                 
@@ -114,19 +138,29 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
                     let address = subJson["address"].stringValue
                     
                     currListing = Listing()
-                    currListing.loadListing(subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: "NOT IMPLEMENTED", likes: 0, photos: 0)
+                    currListing.loadListing(subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: subJson["description"].stringValue, teaser: subJson["teaser"].stringValue, likes: 0, photos: 0)
                     
                     self.listings.append(currListing)
                     
+                                    
                 }
                 
+                //always add the instructions as the first element
+                self.listings.insert(self.initInstructionListing(), atIndex: 0)
                 self.setUpCards()
                 
+          }
         }
-  
     }
     
-    
+    func initInstructionListing() -> Listing {
+        
+        var infoListing:Listing
+         infoListing = Listing()
+        infoListing.loadListing("1 Here St", city: "San Francisco", imageUrl: "", bedrooms: 2, bathrooms: 2, price: 100000, description: "Nice place", teaser: "Hot Property", likes: 1, photos: 4)
+        
+        return infoListing
+    }
     
     func popListingViewWithFrame(frame:CGRect) -> ChooseListingView?{
         if(self.listings.count == 0){

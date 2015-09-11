@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="center" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchBG" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-Dk-n2x">
@@ -22,10 +22,13 @@
                     </variation>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="@quintonwall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <rect key="frame" x="20" y="439" width="336" height="21"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="19" y="647" width="338" height="20"/>
+                    </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

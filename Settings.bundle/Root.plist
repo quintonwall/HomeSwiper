@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Scale Images?</string>
+			<key>Key</key>
+			<string>scaleListingImages</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Listings Service URL</string>
+			<key>Key</key>
+			<string>listingsServiceURL</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

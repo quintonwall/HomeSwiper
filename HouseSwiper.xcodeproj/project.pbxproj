@@ -17,7 +17,7 @@
 		8AC17DCC1AC73756004E6D2D /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC17DCB1AC73756004E6D2D /* ImageLabelView.swift */; };
 		8AC17DCE1AC7376B004E6D2D /* ChooseListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC17DCD1AC7376B004E6D2D /* ChooseListingView.swift */; };
 		8AC17DD01AC7377C004E6D2D /* ChooseListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC17DCF1AC7377C004E6D2D /* ChooseListingViewController.swift */; };
-		8AC17DD21AC73794004E6D2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC17DD11AC73794004E6D2D /* Person.swift */; };
+		E70C19191BA32553002B34CF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E70C19181BA32553002B34CF /* Settings.bundle */; };
 		E7B52B1E1B94EADC00437D96 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B52B1D1B94EADC00437D96 /* SwiftyJSON.swift */; };
 		E7B52B2A1B94EBAF00437D96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B52B201B94EBAF00437D96 /* Alamofire.swift */; };
 		E7B52B2B1B94EBAF00437D96 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B52B211B94EBAF00437D96 /* Download.swift */; };
@@ -55,10 +55,10 @@
 		8AC17DCB1AC73756004E6D2D /* ImageLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
 		8AC17DCD1AC7376B004E6D2D /* ChooseListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseListingView.swift; sourceTree = "<group>"; };
 		8AC17DCF1AC7377C004E6D2D /* ChooseListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseListingViewController.swift; sourceTree = "<group>"; };
-		8AC17DD11AC73794004E6D2D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8AC17DD31AC737AA004E6D2D /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		A18660F0FF140586940004B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C9561F9D1A78250B2600958C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70C19181BA32553002B34CF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E7B52B1D1B94EADC00437D96 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		E7B52B1F1B94EBAF00437D96 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
 		E7B52B201B94EBAF00437D96 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
@@ -131,6 +131,7 @@
 		8AC17D971AC7366A004E6D2D = {
 			isa = PBXGroup;
 			children = (
+				E70C19181BA32553002B34CF /* Settings.bundle */,
 				8AC17DA21AC7366A004E6D2D /* HouseSwiper */,
 				8AC17DBB1AC7366A004E6D2D /* HouseSwiper */,
 				8AC17DA11AC7366A004E6D2D /* Products */,
@@ -212,7 +213,6 @@
 		8AC17DCA1AC73735004E6D2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8AC17DD11AC73794004E6D2D /* Person.swift */,
 				5A2BD4531B92574A00227AB2 /* Listing.swift */,
 			);
 			name = Models;
@@ -302,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70C19191BA32553002B34CF /* Settings.bundle in Resources */,
 				8AC17DAE1AC7366A004E6D2D /* Main.storyboard in Resources */,
 				8AC17DB31AC7366A004E6D2D /* LaunchScreen.xib in Resources */,
 				8AC17DB01AC7366A004E6D2D /* Images.xcassets in Resources */,
@@ -365,7 +366,6 @@
 				E7B52B2D1B94EBAF00437D96 /* MultipartFormData.swift in Sources */,
 				E7B52B2E1B94EBAF00437D96 /* ParameterEncoding.swift in Sources */,
 				E7B52B331B94EBAF00437D96 /* Validation.swift in Sources */,
-				8AC17DD21AC73794004E6D2D /* Person.swift in Sources */,
 				5A2BD4541B92574A00227AB2 /* Listing.swift in Sources */,
 				8AC17DA61AC7366A004E6D2D /* AppDelegate.swift in Sources */,
 				E7B52B321B94EBAF00437D96 /* Upload.swift in Sources */,

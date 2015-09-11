@@ -15,6 +15,7 @@ class Listing: NSObject, Printable {
     var Bathrooms: NSNumber?
     var Price: NSNumber?
     var ListingDescription: NSString?
+    var ListingTeaser: NSString?
     var NumberOfLikes: NSNumber?
     var NumberOfPhotos: NSNumber?
     
@@ -26,12 +27,16 @@ class Listing: NSObject, Printable {
         super.init()
     }
     
-    func loadListing(address: NSString?, city: NSString?, imageUrl: NSString?, bedrooms: NSNumber?, bathrooms: NSNumber?, price: NSNumber?, description: NSString?, likes:NSNumber?, photos:NSNumber?) {
+    func loadListing(address: NSString?, city: NSString?, imageUrl: NSString?, bedrooms: NSNumber?, bathrooms: NSNumber?, price: NSNumber?, description: NSString?, teaser: NSString?, likes:NSNumber?, photos:NSNumber?) {
        self.Address = address ?? ""
         self.City = city ?? ""
         self.ImageUrl = imageUrl ?? ""
         
-        asyncFetchListingImage(imageUrl!)
+        if(imageUrl != "") {
+            asyncFetchListingImage(imageUrl!)
+        } else {
+            self.Image = UIImage(named: "likenope-splash")  //placeholder image
+        }
         
        // self.image = UIImage(data: data!)
         
@@ -39,6 +44,7 @@ class Listing: NSObject, Printable {
         self.Bathrooms = bathrooms ?? 0
         self.Price = price ?? 0
         self.ListingDescription = description ?? ""
+        self.ListingTeaser = teaser ?? ""
         self.NumberOfLikes = likes ?? 0
         self.NumberOfPhotos = photos ?? 0
     }

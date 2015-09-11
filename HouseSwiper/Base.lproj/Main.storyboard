@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg4-Yd-wxi">
+                                <rect key="frame" x="288" y="265" width="46" height="30"/>
+                                <connections>
+                                    <action selector="reloadCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Kg-VO-9Eh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Mg4-Yd-wxi" secondAttribute="centerY" constant="20" id="CT8-Wo-8fJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Mg4-Yd-wxi" secondAttribute="centerX" constant="-11" id="W4s-Gj-CH2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reloadButton" destination="Mg4-Yd-wxi" id="JM7-QX-Odt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
