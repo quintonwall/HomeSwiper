@@ -24,19 +24,13 @@
 //
 
 import UIKit
+import DesignSystem
 
 class ImagelabelView: UIView{
     var imageView: UIImageView!
     var label: UILabel!
     
     
-    /*
-    init(){
-        super.init()
-        imageView = UIImageView()
-        label = UILabel()
-    }
-*/
 
     init(frame: CGRect, image: UIImage, text: String) {
         
@@ -45,7 +39,7 @@ class ImagelabelView: UIView{
         constructLabel(text)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -64,7 +58,7 @@ class ImagelabelView: UIView{
     
     func constructLabel(text:String) -> Void{
         
-        var height:CGFloat = 18.0
+        let height:CGFloat = 18.0
         let leftPadding:CGFloat = 17.0
         
         let frame2 = CGRectMake(leftPadding,
@@ -73,7 +67,7 @@ class ImagelabelView: UIView{
             height);
         self.label = UILabel(frame: frame2)
         label.text = text
-        self.label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.Small);
+        self.label.font = UIFont.sldsFontLightWithSize(SLDSFontSizeType.Small);
         addSubview(label)
         
     }

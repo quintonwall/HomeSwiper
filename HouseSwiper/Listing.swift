@@ -5,7 +5,7 @@ import Foundation
 import UIKit
 
 
-class Listing: NSObject, Printable {
+class Listing: NSObject {
     
     var Address: NSString?
     var City: NSString?
@@ -52,7 +52,7 @@ class Listing: NSObject, Printable {
     
     func getDataFromUrl(url:String, completion: ((data: NSData?) -> Void)) {
         NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: url)!) { (data, response, error) in
-            completion(data: NSData(data: data))
+            completion(data: NSData(data: data!))
             }.resume()
     }
     

@@ -1,4 +1,8 @@
 platform :ios, '8.0'
+use_frameworks!
 
 pod 'MDCSwipeToChoose'
-pod 'SalesforceDesignSystem', :git => 'https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git'
+pod 'DesignSystem'
+pod 'leads-sdk'
+pod 'Alamofire'
+pod 'SwiftyJSON'

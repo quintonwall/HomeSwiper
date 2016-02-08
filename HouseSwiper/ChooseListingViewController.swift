@@ -1,6 +1,11 @@
 
 
 import UIKit
+import DesignSystem
+import MDCSwipeToChoose
+import Alamofire
+import SwiftyJSON
+
 
 class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     
@@ -14,7 +19,7 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     @IBOutlet weak var reloadButton: UIButton!
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -26,7 +31,6 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         super.viewDidLoad()
         
         
-       // self.view.backgroundColor = self.hexStringToUIColor(bgColor)
          self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bgblur-sm")!)
         
         
@@ -35,7 +39,8 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
        
-        reloadButton.setBackgroundImage( UIImage.sdsIconAction(SDSIconActionType.ResetPassword, withSize: 60)!, forState: UIControlState.Normal)
+        
+        reloadButton.setBackgroundImage( UIImage.sldsIconAction(SLDSIconActionType.ResetPassword, withSize: 60)!, forState: UIControlState.Normal)
         
          fetchListings()
     }
@@ -56,6 +61,7 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         // Add buttons to programmatically swipe the view left or right.
         // See the `nopeFrontCardView` and `likeFrontCardView` methods.
         constructNopeButton()
+        constructContactMeButton()
         constructLikedButton()
         
         
@@ -69,7 +75,7 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     // This is called when a user didn't fully swipe left or right.
     func viewDidCancelSwipe(view: UIView) -> Void{
         
-        println("You couldn't decide on \(self.currentListing.Address)");
+        print("You couldn't decide on \(self.currentListing.Address)");
     }
     
     // This is called then a user swipes the view fully left or right.
@@ -78,11 +84,11 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         // MDCSwipeToChooseView shows "NOPE" on swipes to the left,
         // and "LIKED" on swipes to the right.
         if(wasChosenWithDirection == MDCSwipeDirection.Left){
-            println("You noped: \(self.currentListing.Address)")
+            print("You noped: \(self.currentListing.Address)")
         }
         else{
             
-            println("You liked: \(self.currentListing.Address)")
+            print("You liked: \(self.currentListing.Address)")
         }
         
         // MDCSwipeToChooseView removes the view from the view hierarchy
@@ -116,29 +122,35 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
     //and based on this app: https://github.com/ccoenraets/lightning-react-app
     func fetchListings(){
         
-        var defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = NSUserDefaults.standardUserDefaults()
         
        
        
         
         if (defaults.objectForKey("listingsServiceURL") == nil) {
-            var alert = UIAlertController(title: "Oh Snap!", message: "Looks like you have no listings service URL set. Please go to settings and add one.", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Oh Snap!", message: "Looks like you have no listings service URL set. Please go to settings and add one.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
             
         } else {
             
-             var listingUrl:String = defaults.valueForKey("listingsServiceURL") as! String
+             let listingUrl:String = defaults.valueForKey("listingsServiceURL") as! String
         
         request(.GET, listingUrl, parameters: nil)
-            .responseJSON { _, _, JSONstr, _ in
-                //println(JSONstr)
+            .responseJSON { response in
+               
+                let JSONstr = response.result.value
+                
                 
                 let json = JSON(JSONstr!)
                 
                 var currListing:Listing
                 
-                for (index: String, subJson: JSON) in json {
+                
+                
+              
+                for (_,subJson):(String, JSON) in json {
+                    
                     let address = subJson["address"].stringValue
                     
                     currListing = Listing()
@@ -175,12 +187,12 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         // Each take an "options" argument. Here, we specify the view controller as
         // a delegate, and provide a custom callback that moves the back card view
         // based on how far the user has panned the front card view.
-        var options:MDCSwipeToChooseViewOptions = MDCSwipeToChooseViewOptions()
+        let options:MDCSwipeToChooseViewOptions = MDCSwipeToChooseViewOptions()
         options.delegate = self
         //options.threshold = 160.0
         options.onPan = { state -> Void in
             if(self.backCardView != nil){
-                var frame:CGRect = self.frontCardViewFrame()
+                let frame:CGRect = self.frontCardViewFrame()
                 self.backCardView.frame = CGRectMake(frame.origin.x, frame.origin.y-(state.thresholdRatio * 10.0), CGRectGetWidth(frame), CGRectGetHeight(frame))
             }
         }
@@ -188,24 +200,24 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         // Create a listingView with the top listing in the listings array, then pop
         // that listing off the stack.
         
-        var listingView:ChooseListingView = ChooseListingView(frame: frame, listing: self.listings[0], options: options)
+        let listingView:ChooseListingView = ChooseListingView(frame: frame, listing: self.listings[0], options: options)
         self.listings.removeAtIndex(0)
         return listingView
         
     }
     func frontCardViewFrame() -> CGRect{
-        var horizontalPadding:CGFloat = 20.0
-        var topPadding:CGFloat = 60.0
-        var bottomPadding:CGFloat = 200.0
+        let horizontalPadding:CGFloat = 20.0
+        let topPadding:CGFloat = 60.0
+        let bottomPadding:CGFloat = 200.0
         return CGRectMake(horizontalPadding,topPadding,CGRectGetWidth(self.view.frame) - (horizontalPadding * 2), CGRectGetHeight(self.view.frame) - bottomPadding)
     }
     func backCardViewFrame() ->CGRect{
-        var frontFrame:CGRect = frontCardViewFrame()
+        let frontFrame:CGRect = frontCardViewFrame()
         return CGRectMake(frontFrame.origin.x, frontFrame.origin.y + 10.0, CGRectGetWidth(frontFrame), CGRectGetHeight(frontFrame))
     }
     func constructNopeButton() -> Void{
-        let button:UIButton =  UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        let image:UIImage = UIImage.sdsIconAction(SDSIconActionType.Close, withSize: 60)!
+        let button:UIButton =  UIButton(type: .System)
+        let image:UIImage = UIImage.sldsIconAction(SLDSIconActionType.Close, withSize: 60)!
         button.frame = CGRectMake(ChooseListingButtonHorizontalPadding, CGRectGetMaxY(self.backCardView.frame) + ChooseListingButtonVerticalPadding, image.size.width, image.size.height)
         button.setBackgroundImage(image, forState: UIControlState.Normal)
        // button.tintColor = UIColor(red: 247.0/255.0, green: 91.0/255.0, blue: 37.0/255.0, alpha: 1.0)
@@ -213,12 +225,31 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         self.view.addSubview(button)
     }
     
+    func constructContactMeButton() -> Void{
+        
+       let button:UIButton = UIButton(type: .System)
+        let image:UIImage = UIImage.sldsIconAction(SLDSIconActionType.NewOpportunity, withSize: 40)!
+        button.layer.borderWidth = 2
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        
+        button.frame = CGRectMake(CGRectGetMaxX(self.view.frame) - image.size.width - 167, CGRectGetMaxY(self.backCardView.frame) + ChooseListingButtonVerticalPadding+10, image.size.width, image.size.height)
+        button.setBackgroundImage(image, forState:UIControlState.Normal)
+        //button.tintColor = UIColor(red: 29.0/255.0, green: 245.0/255.0, blue: 106.0/255.0, alpha: 1.0)
+        button.addTarget(self, action: "contactMePopup", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
+        
+    }
+
+    
     func constructLikedButton() -> Void{
         
-       // let b2:UIButton = UIButton as! UIButton
+
        
-        let button:UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        let image:UIImage = UIImage.sdsIconAction(SDSIconActionType.Approval, withSize: 60)!
+        let button:UIButton = UIButton(type: .System)
+        let image:UIImage = UIImage.sldsIconAction(SLDSIconActionType.Approval, withSize: 60)!
+        
         button.frame = CGRectMake(CGRectGetMaxX(self.view.frame) - image.size.width - ChooseListingButtonHorizontalPadding, CGRectGetMaxY(self.backCardView.frame) + ChooseListingButtonVerticalPadding, image.size.width, image.size.height)
         button.setBackgroundImage(image, forState:UIControlState.Normal)
         //button.tintColor = UIColor(red: 29.0/255.0, green: 245.0/255.0, blue: 106.0/255.0, alpha: 1.0)
@@ -233,27 +264,15 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         self.frontCardView.mdc_swipe(MDCSwipeDirection.Right)
     }
     
-    
-    func hexStringToUIColor (hex:String) -> UIColor {
-        var cString:String = hex.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet() as NSCharacterSet).uppercaseString
+    func contactMePopup() -> Void {
+        self.performSegueWithIdentifier("test", sender: self)
         
-        if (cString.hasPrefix("#")) {
-            cString = cString.substringFromIndex(advance(cString.startIndex, 1))
-        }
-        
-        if (count(cString) != 6) {
-            return UIColor.grayColor()
-        }
-        
-        var rgbValue:UInt32 = 0
-        NSScanner(string: cString).scanHexInt(&rgbValue)
-        
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
     }
-
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let popup = segue.destinationViewController as! LeadPopupViewController
+        popup.listing = self.currentListing
+    }
 }

@@ -30,6 +30,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
-#import <SalesforceDesignSystem/SalesforceDesignSystem.h>
+#import <DesignSystem/DesignSystem.h>
 
 #endif
