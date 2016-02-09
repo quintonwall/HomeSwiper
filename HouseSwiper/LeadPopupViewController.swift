@@ -56,6 +56,8 @@ class LeadPopupViewController: UIViewController {
         d[Leads.StandardFields.FIRST_NAME] = firstNameTF.text
         d[Leads.StandardFields.LAST_NAME] = lastNameTF.text
         d[Leads.StandardFields.EMAIL] = emailTF.text
+        d["lead_source"] = "Mobile App"
+        d["00NB0000001jonm"] = listing!.PropertyId as! String
         
         //todo: add custom fields to lead object and generate web-to-lead to capture.
         

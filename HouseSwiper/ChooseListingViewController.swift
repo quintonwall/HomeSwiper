@@ -154,7 +154,8 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
                     let address = subJson["address"].stringValue
                     
                     currListing = Listing()
-                    currListing.loadListing(subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: subJson["description"].stringValue, teaser: subJson["teaser"].stringValue, likes: 0, photos: 0)
+
+                    currListing.loadListing(subJson["description"].stringValue, address: subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: subJson["description"].stringValue, teaser: subJson["teaser"].stringValue, likes: 0, photos: 0)
                     
                     self.listings.append(currListing)
                     
@@ -173,7 +174,7 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         
         var infoListing:Listing
          infoListing = Listing()
-        infoListing.loadListing("1 Here St", city: "San Francisco", imageUrl: "", bedrooms: 2, bathrooms: 2, price: 100000, description: "Nice place", teaser: "Hot Property", likes: 1, photos: 4)
+        infoListing.loadListing("0000", address: "1 Here St", city: "San Francisco", imageUrl: "", bedrooms: 2, bathrooms: 2, price: 100000, description: "Nice place", teaser: "Hot Property", likes: 1, photos: 4)
         
         return infoListing
     }

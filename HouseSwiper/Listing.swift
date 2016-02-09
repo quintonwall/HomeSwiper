@@ -18,17 +18,19 @@ class Listing: NSObject {
     var ListingTeaser: NSString?
     var NumberOfLikes: NSNumber?
     var NumberOfPhotos: NSNumber?
+    var PropertyId: NSString?
     
     override var description: String {
-        return "Address: \(Address),  \n City: \(City), \n ImageUrl: \(ImageUrl), \n Bedrooms: \(Bedrooms),  \n Bathrooms: \(Bathrooms), \n Price: \(Price) \n Description: \(ListingDescription),  \n NumberofLikes: \(NumberOfLikes), \n NumberOfPhotos/: \(NumberOfPhotos)"
+        return "PropertyId: \(PropertyId), Address: \(Address),  \n City: \(City), \n ImageUrl: \(ImageUrl), \n Bedrooms: \(Bedrooms),  \n Bathrooms: \(Bathrooms), \n Price: \(Price) \n Description: \(ListingDescription),  \n NumberofLikes: \(NumberOfLikes), \n NumberOfPhotos/: \(NumberOfPhotos)"
     }
     
     override init() {
         super.init()
     }
     
-    func loadListing(address: NSString?, city: NSString?, imageUrl: NSString?, bedrooms: NSNumber?, bathrooms: NSNumber?, price: NSNumber?, description: NSString?, teaser: NSString?, likes:NSNumber?, photos:NSNumber?) {
-       self.Address = address ?? ""
+    func loadListing(propertyId: NSString?, address: NSString?, city: NSString?, imageUrl: NSString?, bedrooms: NSNumber?, bathrooms: NSNumber?, price: NSNumber?, description: NSString?, teaser: NSString?, likes:NSNumber?, photos:NSNumber?) {
+       self.PropertyId = propertyId ?? ""
+        self.Address = address ?? ""
         self.City = city ?? ""
         self.ImageUrl = imageUrl ?? ""
         
