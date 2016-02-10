@@ -155,7 +155,7 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
                     
                     currListing = Listing()
 
-                    currListing.loadListing(subJson["description"].stringValue, address: subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: subJson["description"].stringValue, teaser: subJson["teaser"].stringValue, likes: 0, photos: 0)
+                    currListing.loadListing(subJson["sfid"].stringValue, address: subJson["address"].stringValue, city: subJson["city"].stringValue, imageUrl: subJson["pic"].stringValue, bedrooms: subJson["bedrooms"].numberValue, bathrooms: subJson["bathrooms"].numberValue, price: subJson["price"].numberValue, description: subJson["description"].stringValue, teaser: subJson["teaser"].stringValue, likes: 0, photos: 0)
                     
                     self.listings.append(currListing)
                     

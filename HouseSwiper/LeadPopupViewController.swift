@@ -19,6 +19,7 @@ class LeadPopupViewController: UIViewController {
     @IBOutlet weak var lastNameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var submitButton: LeadsButton!
+    @IBOutlet weak var closeButton: UIButton!
     
     
     override func viewWillAppear(animated: Bool) {
@@ -80,6 +81,11 @@ class LeadPopupViewController: UIViewController {
         
 
     }
+    
+    @IBAction func closeTapped(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
+    
 
     /*
     // MARK: - Navigation
