@@ -31,7 +31,8 @@ class ChooseListingViewController: UIViewController, MDCSwipeToChooseDelegate {
         super.viewDidLoad()
         
         
-         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bgblur-sm")!)
+        // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bgblur-sm")!)
+        
         
         
     }

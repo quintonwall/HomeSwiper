@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.62769931550000002" green="0.79652881620000004" blue="0.92839163540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Mg4-Yd-wxi" secondAttribute="centerY" constant="20" id="CT8-Wo-8fJ"/>
                             <constraint firstAttribute="centerX" secondItem="Mg4-Yd-wxi" secondAttribute="centerX" constant="-11" id="W4s-Gj-CH2"/>
@@ -35,77 +35,12 @@
                     </view>
                     <connections>
                         <outlet property="reloadButton" destination="Mg4-Yd-wxi" id="JM7-QX-Odt"/>
-                        <segue destination="zCA-5a-prg" kind="presentation" identifier="contactme" modalTransitionStyle="flipHorizontal" id="88E-NQ-API"/>
                         <segue destination="d4p-9W-fG1" kind="presentation" identifier="test" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="pML-O1-KAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105" y="447"/>
-        </scene>
-        <!--Contactme View Controller-->
-        <scene sceneID="D2c-HZ-fNW">
-            <objects>
-                <tableViewController modalPresentationStyle="formSheet" id="zCA-5a-prg" customClass="ContactmeViewController" customModule="HouseSwiper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="4" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Px5-lb-vX6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="jWr-GQ-lQE">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JmN-8E-nTT">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JmN-8E-nTT" id="IB2-z3-v9J">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <edgeInsets key="layoutMargins" top="200" left="8" bottom="8" right="8"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ncJ-jQ-wXc">
-                                        <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncJ-jQ-wXc" id="okn-P8-T6e">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="RGZ-Np-6dx">
-                                        <rect key="frame" x="0.0" y="88" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RGZ-Np-6dx" id="5V0-mb-YoY">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TdQ-v1-V3z">
-                                        <rect key="frame" x="0.0" y="132" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TdQ-v1-V3z" id="RvI-o8-MiW">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="zCA-5a-prg" id="bSO-HY-e8d"/>
-                            <outlet property="delegate" destination="zCA-5a-prg" id="8eB-Tl-7zD"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="emailTF" destination="jv4-b9-CoM" id="TAD-Gy-QWq"/>
-                        <outlet property="firstNameTF" destination="yVY-XR-joU" id="ZoU-FE-z3l"/>
-                        <outlet property="lastNameTF" destination="932-B3-0d4" id="xzV-xY-LQ8"/>
-                        <outlet property="submitButton" destination="PlM-Nm-hpd" id="sYP-yh-GEw"/>
-                        <outlet property="tview" destination="Px5-lb-vX6" id="uPn-D2-sHw"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w4T-3W-l84" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="785" y="453"/>
         </scene>
         <!--Lead Popup View Controller-->
         <scene sceneID="lUm-nY-pP2">
@@ -161,7 +96,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="submitLead:" destination="d4p-9W-fG1" eventType="touchUpInside" id="csO-hi-woJ"/>
-                                            <action selector="submitTapped:" destination="zCA-5a-prg" eventType="touchUpInside" id="kW6-Pr-lp5"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="932-B3-0d4">

@@ -7,6 +7,8 @@
     <customFonts key="customFonts">
         <mutableArray key="SalesforceSans-Regular.ttf">
             <string>SalesforceSans-Regular</string>
+            <string>SalesforceSans-Regular</string>
+            <string>SalesforceSans-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -16,38 +18,79 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchBG" translatesAutoresizingMaskIntoConstraints="NO" id="LoN-Dk-n2x">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                    <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@quintonwall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="625" width="336" height="22"/>
+                    <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="19" y="647" width="338" height="20"/>
+                    </variation>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your dream home only strikes once" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="R5d-xj-lgf">
+                    <rect key="frame" x="20" y="411" width="336" height="22"/>
+                    <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="19" y="647" width="338" height="20"/>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="LHF-J9-OXg">
+                    <rect key="frame" x="138" y="284" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="3ne-NJ-33b"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="K52-sb-nWk"/>
+                        <constraint firstAttribute="height" constant="120" id="eF1-k4-09Y"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="j0k-nC-QO7"/>
+                        <constraint firstAttribute="height" constant="100" id="pba-Yi-PbE"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="K52-sb-nWk"/>
+                            <exclude reference="eF1-k4-09Y"/>
+                            <exclude reference="j0k-nC-QO7"/>
+                        </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="@quintonwall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="336" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LIGHTNING REALTY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-8O-KWq">
+                    <rect key="frame" x="20" y="236" width="336" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" misplaced="YES">
                         <rect key="frame" x="19" y="647" width="338" height="20"/>
                     </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.62769931550000002" green="0.79652881620000004" blue="0.92839163540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="LHF-J9-OXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="0OL-6R-CxO"/>
+                <constraint firstItem="LHF-J9-OXg" firstAttribute="top" secondItem="BJc-8O-KWq" secondAttribute="bottom" constant="26" id="5re-tP-fyL"/>
+                <constraint firstItem="R5d-xj-lgf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CIe-2S-WGr"/>
+                <constraint firstItem="BJc-8O-KWq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FOd-bP-xmf"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l">
                     <variation key="widthClass=compact" constant="0.0"/>
                 </constraint>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0">
                     <variation key="widthClass=compact" constant="19"/>
                 </constraint>
+                <constraint firstItem="R5d-xj-lgf" firstAttribute="top" secondItem="LHF-J9-OXg" secondAttribute="bottom" constant="27" id="T4t-PA-h5u"/>
+                <constraint firstItem="LHF-J9-OXg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vuw-7s-8Hr"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="LHF-J9-OXg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gu0-Bf-NLu"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0OL-6R-CxO"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="547.5" y="454.5"/>
         </view>
     </objects>
     <resources>
-        <image name="launchBG" width="750" height="1334"/>
+        <image name="Loading" width="512" height="772"/>
     </resources>
 </document>
