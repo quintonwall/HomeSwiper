@@ -9,7 +9,7 @@
 import UIKit
 import leads_sdk
 
-class LeadPopupViewController: UIViewController {
+class LeadPopupViewController: UIViewController, UITextFieldDelegate {
 
     var listing:Listing?
     
@@ -35,6 +35,8 @@ class LeadPopupViewController: UIViewController {
         lastNameTF.layer.borderWidth = 1
         emailTF.layer.borderColor = UIColor.whiteColor().CGColor
         emailTF.layer.borderWidth = 1
+        
+        
     }
     
     override func viewDidLoad() {
@@ -80,6 +82,15 @@ class LeadPopupViewController: UIViewController {
         }
         
 
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     @IBAction func closeTapped(sender: AnyObject) {

@@ -21,7 +21,7 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@quintonwall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                     <rect key="frame" x="20" y="625" width="336" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0049800067209999997" green="0.63012075420000002" blue="0.87748748060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" misplaced="YES">
                         <rect key="frame" x="19" y="647" width="338" height="20"/>
@@ -37,13 +37,13 @@
                     </variation>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="LHF-J9-OXg">
-                    <rect key="frame" x="138" y="284" width="100" height="100"/>
+                    <rect key="frame" x="138" y="274" width="100" height="120"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="3ne-NJ-33b"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="K52-sb-nWk"/>
                         <constraint firstAttribute="height" constant="120" id="eF1-k4-09Y"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="j0k-nC-QO7"/>
-                        <constraint firstAttribute="height" constant="100" id="pba-Yi-PbE"/>
+                        <constraint firstAttribute="height" constant="120" id="pba-Yi-PbE"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -53,8 +53,8 @@
                         </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LIGHTNING REALTY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-8O-KWq">
-                    <rect key="frame" x="20" y="236" width="336" height="22"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIGHTNING REALTY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-8O-KWq">
+                    <rect key="frame" x="110" y="226" width="156" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
