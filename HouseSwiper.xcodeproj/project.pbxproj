@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		577F53BDDA8A22FDD27C5478 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6302959B1E090E2ABA2A2C1C /* Pods.framework */; };
 		5A2BD4541B92574A00227AB2 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2BD4531B92574A00227AB2 /* Listing.swift */; };
 		8AC17DA61AC7366A004E6D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC17DA51AC7366A004E6D2D /* AppDelegate.swift */; };
 		8AC17DAE1AC7366A004E6D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC17DAC1AC7366A004E6D2D /* Main.storyboard */; };
@@ -20,6 +19,7 @@
 		E70C19191BA32553002B34CF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E70C19181BA32553002B34CF /* Settings.bundle */; };
 		E73305041C655D3A00C66138 /* LeadPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73305031C655D3A00C66138 /* LeadPopupViewController.swift */; };
 		E754AA851C6529C0005EE130 /* ContactmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754AA841C6529C0005EE130 /* ContactmeViewController.swift */; };
+		E80D095E443ACC4A2D525128 /* Pods_HouseSwiper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C679E913C2FD751E4E6121F6 /* Pods_HouseSwiper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43C322BAB037F83583519E07 /* Pods-HouseSwiper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseSwiper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseSwiper/Pods-HouseSwiper.debug.xcconfig"; sourceTree = "<group>"; };
+		50EC79F4AACD90C76DFEEC29 /* Pods-HouseSwiper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseSwiper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseSwiper/Pods-HouseSwiper.release.xcconfig"; sourceTree = "<group>"; };
 		5A2BD4531B92574A00227AB2 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		6302959B1E090E2ABA2A2C1C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC17DA01AC7366A004E6D2D /* HouseSwiper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseSwiper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +50,10 @@
 		8AC17DCD1AC7376B004E6D2D /* ChooseListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseListingView.swift; sourceTree = "<group>"; };
 		8AC17DCF1AC7377C004E6D2D /* ChooseListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseListingViewController.swift; sourceTree = "<group>"; };
 		8AC17DD31AC737AA004E6D2D /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		A18660F0FF140586940004B0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C679E913C2FD751E4E6121F6 /* Pods_HouseSwiper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseSwiper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70C19181BA32553002B34CF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E73305031C655D3A00C66138 /* LeadPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadPopupViewController.swift; sourceTree = "<group>"; };
 		E754AA841C6529C0005EE130 /* ContactmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactmeViewController.swift; sourceTree = "<group>"; };
-		E7E9727132C94671D6F39165 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577F53BDDA8A22FDD27C5478 /* Pods.framework in Frameworks */,
+				E80D095E443ACC4A2D525128 /* Pods_HouseSwiper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,15 +79,16 @@
 			isa = PBXGroup;
 			children = (
 				6302959B1E090E2ABA2A2C1C /* Pods.framework */,
+				C679E913C2FD751E4E6121F6 /* Pods_HouseSwiper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		69A5E46D3FFBEC5516090BE4 /* Pods */ = {
+		5536BA41FCEFF00905CE79EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A18660F0FF140586940004B0 /* Pods.debug.xcconfig */,
-				E7E9727132C94671D6F39165 /* Pods.release.xcconfig */,
+				43C322BAB037F83583519E07 /* Pods-HouseSwiper.debug.xcconfig */,
+				50EC79F4AACD90C76DFEEC29 /* Pods-HouseSwiper.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -98,8 +100,8 @@
 				8AC17DA21AC7366A004E6D2D /* HouseSwiper */,
 				8AC17DBB1AC7366A004E6D2D /* HouseSwiper */,
 				8AC17DA11AC7366A004E6D2D /* Products */,
-				69A5E46D3FFBEC5516090BE4 /* Pods */,
 				21D543B5F260B03C48774AD0 /* Frameworks */,
+				5536BA41FCEFF00905CE79EB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,12 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AC17DC21AC7366A004E6D2D /* Build configuration list for PBXNativeTarget "HouseSwiper" */;
 			buildPhases = (
-				ED9542BEA5B879E582ADD34D /* Check Pods Manifest.lock */,
+				FA5161A2CB6A0F280C81A205 /* [CP] Check Pods Manifest.lock */,
 				8AC17D9C1AC7366A004E6D2D /* Sources */,
 				8AC17D9D1AC7366A004E6D2D /* Frameworks */,
 				8AC17D9E1AC7366A004E6D2D /* Resources */,
-				00D6E888F9ACE2C401C9D7E2 /* Copy Pods Resources */,
-				B054C46602E3820D62EB2FB2 /* Embed Pods Frameworks */,
+				3147514ADB9D885C5FA54CE2 /* [CP] Embed Pods Frameworks */,
+				C6451AE307D74FF1E3F21A5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,44 +290,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00D6E888F9ACE2C401C9D7E2 /* Copy Pods Resources */ = {
+		3147514ADB9D885C5FA54CE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseSwiper/Pods-HouseSwiper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B054C46602E3820D62EB2FB2 /* Embed Pods Frameworks */ = {
+		C6451AE307D74FF1E3F21A5B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseSwiper/Pods-HouseSwiper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED9542BEA5B879E582ADD34D /* Check Pods Manifest.lock */ = {
+		FA5161A2CB6A0F280C81A205 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,9 +476,10 @@
 		};
 		8AC17DC31AC7366A004E6D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18660F0FF140586940004B0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 43C322BAB037F83583519E07 /* Pods-HouseSwiper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HouseSwiper/Info.plist;
@@ -491,9 +494,10 @@
 		};
 		8AC17DC41AC7366A004E6D2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7E9727132C94671D6F39165 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 50EC79F4AACD90C76DFEEC29 /* Pods-HouseSwiper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HouseSwiper/Info.plist;

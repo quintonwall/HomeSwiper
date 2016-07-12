@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SalesforceSans-Regular.ttf">
@@ -21,25 +21,25 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@quintonwall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
                     <rect key="frame" x="20" y="625" width="336" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
-                    <color key="textColor" red="0.0049800067209999997" green="0.63012075420000002" blue="0.87748748060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.21176470589999999" green="0.56862745100000001" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" misplaced="YES">
                         <rect key="frame" x="19" y="647" width="338" height="20"/>
                     </variation>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your dream home only strikes once" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="R5d-xj-lgf">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Find hot properties now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="R5d-xj-lgf">
                     <rect key="frame" x="20" y="411" width="336" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.45098039220000002" green="0.71372549019999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" misplaced="YES">
                         <rect key="frame" x="19" y="647" width="338" height="20"/>
                     </variation>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="LHF-J9-OXg">
-                    <rect key="frame" x="138" y="274" width="100" height="120"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-72" translatesAutoresizingMaskIntoConstraints="NO" id="LHF-J9-OXg">
+                    <rect key="frame" x="128" y="274" width="120" height="120"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="3ne-NJ-33b"/>
+                        <constraint firstAttribute="width" constant="120" id="3ne-NJ-33b"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="K52-sb-nWk"/>
                         <constraint firstAttribute="height" constant="120" id="eF1-k4-09Y"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="135" id="j0k-nC-QO7"/>
@@ -53,17 +53,17 @@
                         </mask>
                     </variation>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIGHTNING REALTY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-8O-KWq">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DREAMHOUSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-8O-KWq">
                     <rect key="frame" x="110" y="226" width="156" height="22"/>
                     <fontDescription key="fontDescription" name="SalesforceSans-Regular" family="Salesforce Sans" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.45098039220000002" green="0.71372549019999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="widthClass=compact" misplaced="YES">
                         <rect key="frame" x="19" y="647" width="338" height="20"/>
                     </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.62769931550000002" green="0.79652881620000004" blue="0.92839163540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="LHF-J9-OXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="0OL-6R-CxO"/>
                 <constraint firstItem="LHF-J9-OXg" firstAttribute="top" secondItem="BJc-8O-KWq" secondAttribute="bottom" constant="26" id="5re-tP-fyL"/>
@@ -91,6 +91,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Loading" width="512" height="772"/>
+        <image name="Icon-72" width="72" height="72"/>
     </resources>
 </document>

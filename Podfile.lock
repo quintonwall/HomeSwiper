@@ -1,22 +1,24 @@
 PODS:
+  - Alamofire (3.4.1)
+  - DesignSystem (2.0.6)
+  - leads-sdk (0.1.1)
   - MDCSwipeToChoose (0.2.3)
-  - SalesforceDesignSystem (0.1.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire
+  - DesignSystem
+  - leads-sdk
   - MDCSwipeToChoose
-  - SalesforceDesignSystem (from `https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git`)
-
-EXTERNAL SOURCES:
-  SalesforceDesignSystem:
-    :git: https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git
-
-CHECKOUT OPTIONS:
-  SalesforceDesignSystem:
-    :commit: 73984be5f27a6308b3c9b2b7ce982c060119aad8
-    :git: https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  DesignSystem: e6767276d8d1340dd82f43149f4b3f61c9c1694d
+  leads-sdk: ef37e1e8472597f4b1d334c09855e8f903373ee3
   MDCSwipeToChoose: 56239d98b4558c66e7c3c9069482befd26092270
-  SalesforceDesignSystem: c3e375a4fcc81acff29ebfc1f99b32d4a9d6e94b
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: aac5389b64f7e01dcda4dfdb0a0269109cf3038d
+
+COCOAPODS: 1.0.1

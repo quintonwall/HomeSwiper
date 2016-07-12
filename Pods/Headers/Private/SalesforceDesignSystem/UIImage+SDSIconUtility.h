@@ -1,1 +1,0 @@
-../../../SalesforceDesignSystem/SalesforceDesignSystem/UIImage+SDSIconUtility.h

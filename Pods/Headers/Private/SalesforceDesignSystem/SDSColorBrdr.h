@@ -1,1 +1,0 @@
-../../../SalesforceDesignSystem/SalesforceDesignSystem/Generated/SDSColorBrdr.h
